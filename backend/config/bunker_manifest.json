@@ -1,0 +1,60 @@
+{
+  "enabled": true,
+  "version": "1.0.0",
+  "last_updated": 1793804765.4417007,
+  "widgets": [
+    {
+      "id": "widget_briefing_matinal",
+      "title": "🌅 Briefing Matinal & Información",
+      "icon": "📡",
+      "category": "macro",
+      "author": "IA Búnker",
+      "description": "Meteorología en Ourense, titulares del día y último resumen de Marc Vidal locutado en altavoces.",
+      "color": "#00f3ff",
+      "created_at": 1793748000.0,
+      "official": false,
+      "actions": [
+        {
+          "type": "custom",
+          "endpoint": "/api/bunker/information/speak",
+          "action": "briefing_audio"
+        }
+      ]
+    },
+    {
+      "title": "Panel de Control Rápido",
+      "icon": "🎛️",
+      "category": "macro",
+      "author": "Búnker AI Engine",
+      "description": "Generado dinámicamente a partir de: 'simulacion_humana_1h, ejecutar sandbox, ver métricas de fallos'",
+      "color": "#00f3ff",
+      "actions": [
+        {
+          "label": "💡 Encender Todo",
+          "service": "light",
+          "entity_id": "all_lights",
+          "action": "turn_on_all",
+          "style": "success"
+        },
+        {
+          "label": "🌑 Apagar Todo",
+          "service": "light",
+          "entity_id": "all_lights",
+          "action": "turn_off_all",
+          "style": "danger"
+        },
+        {
+          "label": "📻 Radio On / Off",
+          "service": "radio",
+          "entity_id": "radio_master",
+          "action": "toggle",
+          "style": "info"
+        }
+      ],
+      "id": "bunker_panel_de_control_rápido_1793804765",
+      "created_at": 1793804765.4417007,
+      "updated_at": 1793804765.4417007,
+      "run_count": 0
+    }
+  ]
+}

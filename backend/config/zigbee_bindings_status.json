@@ -1,0 +1,366 @@
+{
+  "andrea_placa_entrada_state_right__TO__andrea_placa_ventana_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_entrada/3",
+      "to": "andrea_placa_ventana",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_ventana",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_izq_state_left__TO__andrea_placa_ventana_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_izq",
+      "to": "andrea_placa_ventana",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_ventana",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_der_state_left__TO__andrea_placa_ventana_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_der",
+      "to": "andrea_placa_ventana",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_ventana",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_izq_state_right__TO__andrea_led_cama_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_izq/3",
+      "to": "andrea_led_cama",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_led_cama",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_der_state_right__TO__andrea_led_cama_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_der/3",
+      "to": "andrea_led_cama",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_led_cama",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_entrada_state_left__TO__andrea_led_foso_entrada_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_entrada",
+      "to": "andrea_led_foso_entrada",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_led_foso_entrada",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_ventana_state_right__TO__andrea_led_foso_entrada_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_ventana/3",
+      "to": "andrea_led_foso_entrada",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_led_foso_entrada",
+    "autonomous_resilience": true
+  },
+  "salon_entrada_2_state_l1__TO__salon_ventana_2_state_l1": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "salon_entrada_2",
+      "to": "salon_ventana_2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "salon_ventana_2",
+    "autonomous_resilience": true
+  },
+  "salon_entrada_2_state_l2__TO__salon_ventana_2_state_l2": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "salon_entrada_2/2",
+      "to": "salon_ventana_2/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "salon_ventana_2",
+    "autonomous_resilience": true
+  },
+  "salon_ventana_1_state_right__TO__salon_led_sofa_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "salon_ventana_1/3",
+      "to": "salon_led_sofa",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "salon_led_sofa",
+    "autonomous_resilience": true
+  },
+  "pasillo_habitacion_state_l2__TO__entrada_placa_principal_state_center": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "pasillo_habitacion/2",
+      "to": "entrada_placa_principal/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "entrada_placa_principal",
+    "autonomous_resilience": true
+  },
+  "pasillo_cocina_state_l2__TO__entrada_placa_principal_state_center": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "pasillo_cocina/2",
+      "to": "entrada_placa_principal/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "entrada_placa_principal",
+    "autonomous_resilience": true
+  },
+  "pasillo_bano_andrea_state_l2__TO__bano_led_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "pasillo_bano_andrea/2",
+      "to": "bano_led",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "bano_led",
+    "autonomous_resilience": true
+  },
+  "principal_cama_izq_state_center__TO__principal_led_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_izq/2",
+      "to": "principal_led",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_led",
+    "autonomous_resilience": true
+  },
+  "principal_cama_der_state_center__TO__principal_led_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_der/2",
+      "to": "principal_led",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_led",
+    "autonomous_resilience": true
+  },
+  "principal_armario_state_center__TO__principal_led_state": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_armario/2",
+      "to": "principal_led",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_led",
+    "autonomous_resilience": true
+  },
+  "salon_ventana_1_state_left__TO__placa_salon_entrada_state_l1": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "salon_ventana_1",
+      "to": "placa_salon_entrada",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "placa_salon_entrada",
+    "autonomous_resilience": true
+  },
+  "salon_ventana_1_state_center__TO__placa_salon_entrada_state_l2": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "salon_ventana_1/2",
+      "to": "placa_salon_entrada/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "placa_salon_entrada",
+    "autonomous_resilience": true
+  },
+  "principal_ventana_state_left__TO__principal_armario_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_ventana",
+      "to": "principal_armario",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_armario",
+    "autonomous_resilience": true
+  },
+  "principal_cama_izq_state_left__TO__principal_armario_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_izq",
+      "to": "principal_armario",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_armario",
+    "autonomous_resilience": true
+  },
+  "principal_cama_der_state_left__TO__principal_armario_state_left": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_der",
+      "to": "principal_armario",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_armario",
+    "autonomous_resilience": true
+  },
+  "principal_cama_izq_state_right__TO__principal_ventana_state_right": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_izq/3",
+      "to": "principal_ventana/3",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_ventana",
+    "autonomous_resilience": true
+  },
+  "principal_cama_der_state_right__TO__principal_ventana_state_right": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "principal_cama_der/3",
+      "to": "principal_ventana/3",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "principal_ventana",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_izq_state_center__TO__andrea_placa_entrada_state_center": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_izq/2",
+      "to": "andrea_placa_entrada/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_entrada",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_cama_der_state_center__TO__andrea_placa_entrada_state_center": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_cama_der/2",
+      "to": "andrea_placa_entrada/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_entrada",
+    "autonomous_resilience": true
+  },
+  "andrea_placa_ventana_state_center__TO__andrea_placa_entrada_state_center": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "andrea_placa_ventana/2",
+      "to": "andrea_placa_entrada/2",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "andrea_placa_entrada",
+    "autonomous_resilience": true
+  },
+  "pasillo_cocina_state_l1__TO__pasillo_habitacion_state_l1": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "pasillo_cocina",
+      "to": "pasillo_habitacion",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "pasillo_habitacion",
+    "autonomous_resilience": true
+  },
+  "entrada_placa_principal_state_left__TO__pasillo_habitacion_state_l1": {
+    "status": "applied",
+    "method": "direct_cluster_bind",
+    "payload": {
+      "from": "entrada_placa_principal",
+      "to": "pasillo_habitacion",
+      "clusters": [
+        "genOnOff"
+      ]
+    },
+    "target": "pasillo_habitacion",
+    "autonomous_resilience": true
+  }
+}

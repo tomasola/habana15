@@ -1,0 +1,393 @@
+[
+  {
+    "id": "scene_modo_relax",
+    "name": "Modo Relax & Desconexión",
+    "description": "Iluminación indirecta cálida al 20%, cierre suave de persianas y ambiente acústico relajante.",
+    "icon": "🕯️",
+    "category": "scene",
+    "enabled": false,
+    "trigger": {
+      "type": "manual"
+    },
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "luz_luz_principal_del_salon_53c1",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "led_aparador_salon",
+        "action": "turn_on",
+        "brightness": 20,
+        "color_temp_kelvin": 2400
+      },
+      {
+        "type": "device",
+        "entity_id": "led_sofa_salon",
+        "action": "turn_on",
+        "brightness": 18,
+        "color_temp_kelvin": 2400
+      },
+      {
+        "type": "device",
+        "entity_id": "cover.persiana_salon",
+        "action": "set_cover_position",
+        "position": 15
+      },
+      {
+        "type": "tts",
+        "text": "Modo relax activado. Disfruta de tu descanso."
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "is_quick_scene": true,
+    "quick_color": "#f59e0b",
+    "quick_order": 2
+  },
+  {
+    "id": "scene_fuera_de_casa",
+    "name": "Modo Salir / Fuera de Casa",
+    "description": "Apagado maestro total de iluminación, cierre de persianas y armado completo de seguridad perimetral.",
+    "icon": "🚪",
+    "category": "security",
+    "enabled": false,
+    "trigger": {
+      "type": "manual"
+    },
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "luz_luz_principal_del_salon_53c1",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "luz_luz_del_comedor_d9b2",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "luz_techo_cocina",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "luz_techo_pasillo",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "luz_lazos_andrea",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "cover.persiana_salon",
+        "action": "close_cover"
+      },
+      {
+        "type": "device",
+        "entity_id": "cover.persiana_principal",
+        "action": "close_cover"
+      },
+      {
+        "type": "device",
+        "entity_id": "cover.persiana_andrea",
+        "action": "close_cover"
+      },
+      {
+        "type": "tts",
+        "text": "Modo salir activado. Toda la casa apagada y vigilancia perimetral armada."
+      },
+      {
+        "entity_id": "cover.persiana_salon_puerta",
+        "action": "close",
+        "name": "Bajar Persiana Salón Puerta",
+        "type": "device"
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "is_quick_scene": true,
+    "quick_color": "#ef4444",
+    "quick_order": 5,
+    "type": "automation",
+    "conditions": [],
+    "tts_message": "",
+    "tts_speaker": null,
+    "last_triggered": null,
+    "execution_count": 0
+  },
+  {
+    "id": "auto_camara_pasillo_humano",
+    "name": "Luz Pasillo por Visión de Cámara (Pet-Safe)",
+    "description": "Enciende la luz del pasillo al detectar una persona humana en la cámara (24/7), ignorando a los gatos.",
+    "icon": "📹",
+    "category": "camera",
+    "enabled": false,
+    "trigger": {
+      "type": "camera",
+      "camera_id": "camara_pasillo",
+      "event": "person_detected"
+    },
+    "conditions": [
+      {
+        "type": "pet_immunity",
+        "camera_id": "camara_pasillo"
+      }
+    ],
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "led_pasillo_central",
+        "action": "turn_on",
+        "brightness": 60,
+        "color_temp_kelvin": 3000
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "last_triggered": "2026-10-25T21:58:14.440660",
+    "execution_count": 345,
+    "type": "automation",
+    "tts_message": null,
+    "tts_speaker": "todos",
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "auto_camara_cam720_salon",
+    "name": "Luz Nocturna Salón por Visión Cam720",
+    "description": "Enciende la tira LED del sofá al ver entrar a una persona en el salón (24/7), ignorando a los gatos.",
+    "icon": "👁️",
+    "category": "camera",
+    "enabled": false,
+    "trigger": {
+      "type": "camera",
+      "camera_id": "camara_cam720",
+      "event": "person_detected"
+    },
+    "conditions": [
+      {
+        "type": "pet_immunity",
+        "camera_id": "camara_cam720"
+      }
+    ],
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "led_sofa_salon",
+        "action": "turn_on",
+        "brightness": 25,
+        "color_temp_kelvin": 2700
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "last_triggered": "2026-10-25T21:57:55.998788",
+    "execution_count": 252,
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "auto_tension_red_alerta",
+    "name": "Alerta por Caída de Tensión 230V",
+    "description": "Monitoriza la estabilidad eléctrica de la vivienda y avisa si el voltaje desciende por debajo de 200V.",
+    "icon": "⚡",
+    "category": "power",
+    "enabled": false,
+    "trigger": {
+      "type": "sensor",
+      "entity_id": "monitor_tension_general",
+      "to_state": "warning"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "tts",
+        "text": "Aviso técnico. Detectada caída anormal de tensión en el suministro eléctrico general."
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "auto_calidad_aire_co2",
+    "name": "Alerta Ventilación por Nivel Alto de CO2",
+    "description": "Avisa cuando el nivel de dióxido de carbono en el salón supera los 1000 ppm recomendados.",
+    "icon": "🌿",
+    "category": "air",
+    "enabled": false,
+    "trigger": {
+      "type": "sensor",
+      "entity_id": "sensor_clima_co2_salon",
+      "to_state": "warning"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "tts",
+        "text": "El nivel de CO2 en el salón es elevado. Se recomienda abrir las ventanas durante unos minutos para renovar el aire."
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "auto_eco_clima_ventana",
+    "name": "Eco-Clima: Ventana Abierta con Climatización",
+    "description": "Recuerda cerrar la ventana del salón si se abre mientras la estancia está climatizada.",
+    "icon": "🪟",
+    "category": "climate",
+    "enabled": false,
+    "trigger": {
+      "type": "sensor",
+      "entity_id": "sensor_ventana_salon",
+      "to_state": "open"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "tts",
+        "text": "Ventana del salón abierta. Recuerde mantenerla cerrada para no perder climatización."
+      }
+    ],
+    "last_run": null,
+    "run_count": 0,
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "scene_salon_todo_off",
+    "name": "Apagar Todo el Salón",
+    "description": "Apagado completo e instantáneo de todas las luces de techo y tiras LED del salón.",
+    "type": "automation",
+    "icon": "⚫",
+    "enabled": false,
+    "trigger": {
+      "type": "manual"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "luz_luz_principal_del_salon_53c1",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "luz_luz_del_comedor_d9b2",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "led_sofa_salon",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "led_tv_salon",
+        "action": "turn_off"
+      },
+      {
+        "type": "device",
+        "entity_id": "led_aparador_salon",
+        "action": "turn_off"
+      }
+    ],
+    "tts_message": "",
+    "tts_speaker": null,
+    "last_triggered": "2026-10-25T10:01:01.069532",
+    "execution_count": 1,
+    "is_quick_scene": true,
+    "quick_color": "#94a3b8",
+    "quick_order": 4,
+    "category": "scene"
+  },
+  {
+    "id": "auto_1793224214100",
+    "name": "Estractor",
+    "description": "",
+    "type": "automation",
+    "icon": "⚡",
+    "enabled": true,
+    "trigger": {
+      "type": "manual"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "luz_estractor_baño_0584",
+        "action": "timed_on",
+        "brightness": 50,
+        "color_temp_kelvin": 3000,
+        "duration_minutes": 1
+      }
+    ],
+    "tts_message": "",
+    "tts_speaker": null,
+    "last_triggered": "2026-10-28T23:06:06.442181",
+    "execution_count": 3,
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff"
+  },
+  {
+    "id": "auto_moes_b1_single",
+    "name": "Moes B1 (1 Clic) ➔ Alternar: Luz Principal del Salón",
+    "description": "",
+    "type": "automation",
+    "icon": "⚡",
+    "enabled": true,
+    "trigger": {
+      "type": "sensor",
+      "entity_id": "sensor_pulsador_4_botones",
+      "to_state": "1_single"
+    },
+    "conditions": null,
+    "actions": [
+      {
+        "type": "device",
+        "entity_id": "luz_luz_principal_del_salon_53c1",
+        "action": "toggle"
+      }
+    ],
+    "tts_message": null,
+    "tts_speaker": null,
+    "category": "lighting",
+    "is_quick_scene": false,
+    "quick_color": "#00f3ff",
+    "quick_order": 50,
+    "last_triggered": "2026-11-02T11:35:12.143400",
+    "execution_count": 10
+  },
+  {
+    "id": "auto_notificaciones_cambios_whatsapp",
+    "name": "Avisos WhatsApp de Cambios y Luces",
+    "description": "Envía un mensaje de WhatsApp a Tomás cada vez que se enciende o apaga una luz, o se pulsa un interruptor en Habana.",
+    "type": "automation",
+    "icon": "📲",
+    "enabled": true,
+    "trigger": {
+      "type": "state_change",
+      "scope": "all_lights_and_switches"
+    },
+    "conditions": [],
+    "actions": [
+      {
+        "type": "whatsapp_notification",
+        "recipient": "34647797575@s.whatsapp.net"
+      }
+    ],
+    "tts_message": null,
+    "tts_speaker": null,
+    "last_triggered": "2026-11-07T00:39:11",
+    "execution_count": 740
+  }
+]

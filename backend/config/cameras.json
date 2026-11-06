@@ -1,0 +1,45 @@
+{
+  "camara_pasillo": {
+    "id": "camara_pasillo",
+    "name": "Cámara Pasillo Interior",
+    "ip": "192.168.1.129",
+    "protocol": "tuya_onvif",
+    "port_onvif": 8000,
+    "port_rtsp": 5543,
+    "user": "admin",
+    "password": "tomas30ola",
+    "stream_hd": "rtsp://admin:tomas30ola@192.168.1.129:5543/e4a2f62f9342b7b662a9d72917a1190a/live/channel0",
+    "stream_sub": "rtsp://admin:tomas30ola@192.168.1.129:5543/e4a2f62f9342b7b662a9d72917a1190a/live/channel1",
+    "room": "pasillo",
+    "enabled": true
+  },
+  "camara_terraza": {
+    "id": "camara_terraza",
+    "name": "Cámara Terraza Exterior",
+    "ip": "192.168.1.128",
+    "ip_alias": "192.168.1.129",
+    "protocol": "tuya_onvif",
+    "port_onvif": 8000,
+    "port_rtsp": 5543,
+    "user": "admin",
+    "password": "tomas30ola",
+    "stream_hd": "rtsp://admin:tomas30ola@192.168.1.128:5543/e4a2f62f9342b7b662a9d72917a1190a/live/channel0",
+    "stream_sub": "rtsp://admin:tomas30ola@192.168.1.128:5543/e4a2f62f9342b7b662a9d72917a1190a/live/channel1",
+    "room": "terraza",
+    "enabled": true
+  },
+  "camara_cam720": {
+    "id": "camara_cam720",
+    "name": "Salon",
+    "ip": "192.168.1.132",
+    "protocol": "cam720_onvif",
+    "port_onvif": 8899,
+    "port_rtsp": 554,
+    "user": "admin",
+    "password": "UHCDRTJ1",
+    "stream_hd": "rtsp://192.168.1.132:554/live/ch00_0",
+    "stream_sub": "rtsp://192.168.1.132:554/live/ch00_1",
+    "room": "salon",
+    "enabled": true
+  }
+}

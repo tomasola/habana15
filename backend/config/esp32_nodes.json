@@ -1,0 +1,113 @@
+{
+  "esp32_bola_xiaozhi": {
+    "id": "esp32_bola_xiaozhi",
+    "name": "Esfera Xiaozhi Robot V2",
+    "type": "voice_display_sphere",
+    "chip": "ESP32-S3",
+    "room": "salon",
+    "port": "COM3",
+    "ip": "192.168.1.246",
+    "status": "online",
+    "capabilities": [
+      "audio_input",
+      "audio_output",
+      "round_display",
+      "ble_tracker",
+      "touch_button",
+      "voice_assistant"
+    ],
+    "wake_word": "cuba",
+    "screen": {
+      "model": "GC9A01A",
+      "resolution": "240x240",
+      "current_expression": "happy"
+    },
+    "audio": {
+      "mic": "I2S Mics (GPIO 10, 9, 45, 16)",
+      "speaker": "I2S Speaker (GPIO 8, 46)",
+      "volume": 20
+    },
+    "ble_scanner": {
+      "enabled": true,
+      "interval_seconds": 10,
+      "detected_beacons": 4
+    },
+    "battery": {
+      "percentage": 98,
+      "charging": true
+    },
+    "last_seen": 1793524893.661083
+  },
+  "esp32_pantalla_jc3248w535": {
+    "id": "esp32_pantalla_jc3248w535",
+    "name": "Pantalla Táctil 3.5\" Guition JC3248W535",
+    "type": "wall_touch_display",
+    "chip": "ESP32-S3 (8MB PSRAM, 16MB Flash)",
+    "room": "salon",
+    "port": "COM5",
+    "ip": "192.168.1.247",
+    "mac": "DC:B4:D9:04:22:AC",
+    "status": "offline",
+    "capabilities": [
+      "display_touch",
+      "ble_radar_viewer",
+      "fastapi_http",
+      "ota_updates"
+    ],
+    "screen": {
+      "model": "JC3248W535",
+      "resolution": "480x320",
+      "orientation": "Landscape",
+      "touch_controller": "AXS15231 (Capacitivo I2C)",
+      "calibration": "x:0..480, y:0..320, swap_xy:true, mirror_x:false, mirror_y:true"
+    },
+    "buttons": {
+      "btn1": {
+        "id": "btn1",
+        "name": "Botón 1 (Arriba Izquierda)",
+        "label": "APAGAR LUCES",
+        "action": "all_off",
+        "endpoint": "/api/z2m-hub/all-off",
+        "method": "POST",
+        "icon": "💡",
+        "color": "#ef4444",
+        "subtext": "Apagar todas las luces de la casa"
+      },
+      "btn2": {
+        "id": "btn2",
+        "name": "Botón 2 (Arriba Derecha)",
+        "label": "ACTIVAR ALARMA",
+        "action": "toggle_alarm",
+        "endpoint": "/api/security/alarm/toggle",
+        "method": "POST",
+        "icon": "🛡️",
+        "color": "#3b82f6",
+        "subtext": "Conmutar armado / desarmado de seguridad"
+      },
+      "btn3": {
+        "id": "btn3",
+        "name": "Botón 3 (Abajo Izquierda)",
+        "label": "RADAR PRESENCIA",
+        "action": "page_radar",
+        "endpoint": "page_radar",
+        "method": "PAGE",
+        "icon": "🛰️",
+        "color": "#10b981",
+        "subtext": "Abrir panel de presencia BLE y ocupantes"
+      },
+      "btn4": {
+        "id": "btn4",
+        "name": "Botón 4 (Abajo Derecha)",
+        "label": "DATOS SENSORES",
+        "action": "page_sensors",
+        "endpoint": "page_sensors",
+        "method": "PAGE",
+        "icon": "🌡️",
+        "color": "#06b6d4",
+        "subtext": "Temperatura, humedad ambiental y plantas",
+        "key": "btn4"
+      }
+    },
+    "last_seen": 1793520000.0
+  }
+}

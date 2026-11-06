@@ -1,0 +1,18 @@
+{
+  "Salón": {
+    "enabled": true
+  },
+  "Cocina": {
+    "enabled": true
+  },
+  "Despacho": {
+    "enabled": true
+  },
+  "Dormitorio": {
+    "enabled": true
+  },
+  "Tarjeta de Sonido PC": {
+    "enabled": true,
+    "delay_ms": 1850
+  }
+}

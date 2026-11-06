@@ -1,0 +1,143 @@
+{
+  "andrea": {
+    "id": "andrea",
+    "name": "Habitación de Andrea",
+    "status": "ready",
+    "active_in_3d": true,
+    "raw_photos": [
+      {
+        "id": "raw_andrea_1",
+        "filename": "andrea_raw_view.jpg",
+        "url": "/room_photos/andrea_clean_view_window.jpg",
+        "angle": "window",
+        "uploaded_at": "2026-10-14 18:30"
+      }
+    ],
+    "views": [
+      {
+        "angle": "window",
+        "name": "Vista Ventanal y Cama",
+        "image_url": "/room_photos/andrea_clean_view_window.jpg",
+        "processed_url": "/room_photos/andrea_clean_view_window.jpg",
+        "description": "Fotografía HD fotorrealista limpia con TV en pared y ambas mesitas",
+        "lights": [
+          {
+            "id": "techo",
+            "name": "Lámpara de Lazos Cama Andrea",
+            "entity_id": "luz_lazos_andrea",
+            "type": "emissive_bloom",
+            "zone": "center_ceiling"
+          },
+          {
+            "id": "viga",
+            "name": "Luz Oculta Viga / Ventana Andrea",
+            "entity_id": "luz_ventana_andrea",
+            "type": "downward_wash",
+            "zone": "desk_alcove"
+          },
+          {
+            "id": "led_cabecero",
+            "name": "Tira LED Cabecero Cama Andrea",
+            "entity_id": "led_cama_andrea",
+            "type": "grazing_cove",
+            "zone": "headboard_wall"
+          },
+          {
+            "id": "led_entrada",
+            "name": "Tira LED Foso Entrada Andrea",
+            "entity_id": "led_foso_andrea",
+            "type": "indirect_cove",
+            "zone": "entrance_hallway"
+          }
+        ],
+        "covers": [
+          {
+            "id": "persiana",
+            "name": "Persiana Habitación Andrea",
+            "entity_id": "cover.persiana_andrea"
+          }
+        ]
+      },
+      {
+        "angle": "door",
+        "name": "Vista Entrada y Cómoda",
+        "image_url": "/room_photos/andrea_clean_view_door.jpg",
+        "processed_url": "/room_photos/andrea_clean_view_door.jpg",
+        "description": "Vista inversa hacia el espejo y la cómoda",
+        "lights": [
+          {
+            "id": "techo",
+            "name": "Lámpara de Lazos Cama Andrea",
+            "entity_id": "luz_lazos_andrea",
+            "type": "emissive_bloom",
+            "zone": "center_ceiling"
+          },
+          {
+            "id": "led_entrada",
+            "name": "Tira LED Foso Entrada Andrea",
+            "entity_id": "led_foso_andrea",
+            "type": "indirect_cove",
+            "zone": "entrance_hallway"
+          }
+        ],
+        "covers": []
+      }
+    ]
+  },
+  "salon": {
+    "id": "salon",
+    "name": "Salón Principal",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "principal": {
+    "id": "principal",
+    "name": "Dormitorio Principal",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "cocina": {
+    "id": "cocina",
+    "name": "Cocina",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "terraza": {
+    "id": "terraza",
+    "name": "Terraza Exterior",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "bano": {
+    "id": "bano",
+    "name": "Baño",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "despacho": {
+    "id": "despacho",
+    "name": "Despacho / Oficina",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  },
+  "pasillo": {
+    "id": "pasillo",
+    "name": "Pasillo",
+    "status": "pending_upload",
+    "active_in_3d": false,
+    "raw_photos": [],
+    "views": []
+  }
+}

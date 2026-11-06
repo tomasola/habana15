@@ -1,0 +1,32 @@
+[
+  {
+    "id": "e41b3219-6c37-474e-8819-99158a36019b",
+    "text": "Comprar bombillas LED Zigbee para el pasillo",
+    "metadata": {}
+  },
+  {
+    "id": "937051d5-fee8-4734-98a9-86bb3eeac6cb",
+    "text": "Usuario en silencio durante la tarde, verificar preferencias de cena o ambiente",
+    "metadata": {}
+  },
+  {
+    "id": "53ee81f8-e921-4077-b182-a2fd69dc0767",
+    "text": "Usuario cambió contexto de ubicación a Ciudad de México",
+    "metadata": {}
+  },
+  {
+    "id": "f76b13b4-9470-40ab-b549-d1754fff4049",
+    "text": "Prefiere la estética \"Ciudad de México\" para la iluminación de la casa",
+    "metadata": {}
+  },
+  {
+    "id": "2e17751f-b0bd-4783-9092-32e9bca29084",
+    "text": "Tomás prefiere encender todas las luces de la casa (principal, salón, cocina, pasillo, Andrea) con un solo comando.",
+    "metadata": {}
+  },
+  {
+    "id": "dfb8e40c-4b10-4684-ab72-8ac143cc8081",
+    "text": "Protocolo de apagado masivo debe incluir TODOS los IDs de luz y LED, no solo los principales",
+    "metadata": {}
+  }
+]

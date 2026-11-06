@@ -1,0 +1,392 @@
+{
+  "id": "snap_1793655223_901",
+  "timestamp": 1793655223.901773,
+  "datetime_str": "2026-11-02 22:33:43",
+  "description": "Auto-snapshot antes de borrar widget bunker_persianas_panel",
+  "manifest_copy": {
+    "enabled": true,
+    "version": "1.0.0",
+    "last_updated": 1793614620.345382,
+    "widgets": [
+      {
+        "id": "bunker_demo_master_night",
+        "title": "Macro Buenas Noches (Experimental)",
+        "icon": "🌙",
+        "category": "macro",
+        "author": "IA Local",
+        "description": "Apaga todas las luces secundarias, baja persianas al 10% y fija iluminación tenue en el pasillo.",
+        "color": "#8b5cf6",
+        "actions": [
+          {
+            "entity_id": "all_lights",
+            "action": "turn_off_all"
+          },
+          {
+            "entity_id": "led_pasillo_central",
+            "action": "turn_on",
+            "brightness": 15
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_quick_terrace_relax",
+        "title": "Ambiente Terraza & Salón Cálido",
+        "icon": "🍹",
+        "category": "scene",
+        "author": "IA Local",
+        "description": "Luz tenue dorada para desconexión en el salón y terraza exterior.",
+        "color": "#f59e0b",
+        "actions": [
+          {
+            "entity_id": "luz_techo_salon",
+            "action": "turn_on"
+          },
+          {
+            "entity_id": "led_sofa_salon",
+            "action": "turn_on",
+            "brightness": 35
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_control_luces_radio",
+        "title": "Control Maestro: Luces & Radio",
+        "icon": "🎛️",
+        "category": "panel",
+        "author": "IA Habana 14",
+        "description": "Ventana interactiva de acceso rápido a la iluminación global y streaming de radio multiroom.",
+        "color": "#00f3ff",
+        "buttons": [
+          {
+            "label": "Encender Luces",
+            "icon": "💡",
+            "color": "#10b981",
+            "action_payload": {
+              "entity_id": "all_lights",
+              "action": "turn_on_all"
+            }
+          },
+          {
+            "label": "Apagar Luces",
+            "icon": "🌙",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "all_lights",
+              "action": "turn_off_all"
+            }
+          },
+          {
+            "label": "Radio On / Off",
+            "icon": "📻",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "toggle",
+              "station": "los40"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "all_lights",
+            "action": "turn_on_all"
+          }
+        ],
+        "updated_at": 1793613065.4860213,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_persianas_panel",
+        "title": "Control Central de Persianas",
+        "icon": "🪟",
+        "category": "panel",
+        "author": "IA Habana 14",
+        "description": "Control unificado de las persianas motorizadas de la vivienda (Salón, Andrea y Principal).",
+        "color": "#38bdf8",
+        "buttons": [
+          {
+            "label": "Subir Todas (100%)",
+            "icon": "☀️",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "action": "open"
+            }
+          },
+          {
+            "label": "Modo Noche (20%)",
+            "icon": "🌙",
+            "color": "#818cf8",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "position": 20
+            }
+          },
+          {
+            "label": "Cerrar Todas (0%)",
+            "icon": "🔒",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "action": "close"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "all_covers",
+            "action": "close"
+          }
+        ],
+        "created_at": 1793613065.4921405,
+        "updated_at": 1793613065.4921405,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_ambientes_salon",
+        "title": "Ambientes & Modos Salón",
+        "icon": "🎬",
+        "category": "scene",
+        "author": "IA Habana 14",
+        "description": "Escenas lumínicas cinematográficas y de relajación con balance cálido de tiras LED.",
+        "color": "#8b5cf6",
+        "buttons": [
+          {
+            "label": "Modo Cine",
+            "icon": "🍿",
+            "color": "#8b5cf6",
+            "action_payload": {
+              "entity_id": "modo_cine",
+              "action": "modo_cine"
+            }
+          },
+          {
+            "label": "Modo Relax Cálido",
+            "icon": "🕯️",
+            "color": "#f59e0b",
+            "action_payload": {
+              "entity_id": "modo_relax",
+              "action": "modo_relax"
+            }
+          },
+          {
+            "label": "Luces Día Salón",
+            "icon": "💡",
+            "color": "#10b981",
+            "action_payload": {
+              "entity_id": "room_salon",
+              "action": "turn_on"
+            }
+          },
+          {
+            "label": "Apagar Salón",
+            "icon": "🌑",
+            "color": "#64748b",
+            "action_payload": {
+              "entity_id": "room_salon",
+              "action": "turn_off"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "modo_cine",
+            "action": "modo_cine"
+          }
+        ],
+        "created_at": 1793613065.498142,
+        "updated_at": 1793613065.498142,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_habitacion_andrea",
+        "title": "Habitación Andrea",
+        "icon": "👧",
+        "category": "room",
+        "author": "IA Habana 14",
+        "description": "Gestión de iluminación cálida en cabecero, foso de entrada y persiana de Andrea.",
+        "color": "#ec4899",
+        "buttons": [
+          {
+            "label": "Luz Suave Cabecero",
+            "icon": "✨",
+            "color": "#ec4899",
+            "action_payload": {
+              "entity_id": "led_cama_andrea",
+              "action": "turn_on",
+              "brightness": 40
+            }
+          },
+          {
+            "label": "Bajar Persiana",
+            "icon": "🪟",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "cover.persiana_andrea",
+              "action": "close"
+            }
+          },
+          {
+            "label": "Apagar Habitación",
+            "icon": "🌙",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "room_andrea",
+              "action": "turn_off"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "room_andrea",
+            "action": "turn_off"
+          }
+        ],
+        "created_at": 1793613065.5062551,
+        "updated_at": 1793613065.5062551,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_sintonizador_radio",
+        "title": "Sintonizador Radio Multiroom",
+        "icon": "📻",
+        "category": "audio",
+        "author": "IA Habana 14",
+        "description": "Cambio directo de dial y control de emisión de audio en los altavoces de la casa.",
+        "color": "#10b981",
+        "buttons": [
+          {
+            "label": "Los 40",
+            "icon": "🎵",
+            "color": "#10b981",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "play",
+              "station": "los40"
+            }
+          },
+          {
+            "label": "Cadena SER",
+            "icon": "📻",
+            "color": "#f59e0b",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "play",
+              "station": "cadena_ser"
+            }
+          },
+          {
+            "label": "Cadena Dial",
+            "icon": "🎹",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "play",
+              "station": "cadena_dial"
+            }
+          },
+          {
+            "label": "Detener Radio",
+            "icon": "⏹️",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "stop"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "radio",
+            "action": "stop"
+          }
+        ],
+        "created_at": 1793613065.512343,
+        "updated_at": 1793613065.512343,
+        "run_count": 0
+      },
+      {
+        "title": "Control Modo Cine",
+        "icon": "🎬",
+        "category": "macro",
+        "author": "Búnker AI Engine",
+        "description": "Generado dinámicamente a partir de: 'crea un boton que suba las persianas y otro que las baje y modo cine'",
+        "color": "#a855f7",
+        "actions": [
+          {
+            "label": "🎬 Activar Cine",
+            "service": "scene",
+            "entity_id": "modo_cine",
+            "action": "activate",
+            "style": "secondary"
+          }
+        ],
+        "id": "bunker_control_modo_cine_1793613691",
+        "created_at": 1793613691.8917048,
+        "updated_at": 1793613691.8917048,
+        "run_count": 0
+      },
+      {
+        "title": "Control Modo Cine",
+        "icon": "🎬",
+        "category": "macro",
+        "author": "Búnker AI Engine",
+        "description": "Generado dinámicamente a partir de: 'crea un boton que suba las persianas y otro que las baje y modo cine'",
+        "color": "#a855f7",
+        "actions": [
+          {
+            "label": "🎬 Activar Cine",
+            "service": "scene",
+            "entity_id": "modo_cine",
+            "action": "activate",
+            "style": "secondary"
+          }
+        ],
+        "id": "bunker_control_modo_cine_1793613711",
+        "created_at": 1793613711.85909,
+        "updated_at": 1793613711.85909,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_panel_maestro_tomás_1793613832",
+        "title": "Panel Maestro Tomas (Ajustado)",
+        "icon": "👑",
+        "category": "macro",
+        "author": "Búnker AI Engine",
+        "description": "Generado dinámicamente a partir de: 'crea una ventana nueva en la que salgan tres botones, uno encienda toda las luces otro apage toda las luces, y el ultimo que ponga la radio o la apague si esta encendida'",
+        "color": "#00f3ff",
+        "actions": [
+          {
+            "label": "💡 Encender Luces",
+            "service": "light",
+            "entity_id": "all_lights",
+            "action": "turn_on_all",
+            "style": "success"
+          },
+          {
+            "label": "🌑 Apagar Luces",
+            "service": "light",
+            "entity_id": "all_lights",
+            "action": "turn_off_all",
+            "style": "danger"
+          },
+          {
+            "label": "📻 Radio On / Off",
+            "service": "radio",
+            "entity_id": "radio_master",
+            "action": "toggle",
+            "style": "info"
+          }
+        ],
+        "updated_at": 1793614620.345382,
+        "run_count": 0
+      }
+    ]
+  }
+}

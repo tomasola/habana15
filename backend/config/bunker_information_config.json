@@ -1,0 +1,42 @@
+{
+  "weather": {
+    "city": "Ourense",
+    "latitude": 42.3358,
+    "longitude": -7.8639,
+    "timezone": "Europe/Madrid"
+  },
+  "news_feeds": [
+    {
+      "id": "lavoz_ourense",
+      "name": "La Voz de Galicia (Ourense)",
+      "url": "https://www.lavozdegalicia.es/ourense/index.xml",
+      "category": "Local Ourense"
+    },
+    {
+      "id": "elmundo_portada",
+      "name": "El Mundo",
+      "url": "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml",
+      "category": "Nacional"
+    },
+    {
+      "id": "europapress",
+      "name": "Europa Press",
+      "url": "https://www.europapress.es/rss/rss.aspx",
+      "category": "Última Hora"
+    }
+  ],
+  "youtube_channels": [
+    {
+      "id": "UCKC77AR_zWXRTE2GOD_2Uag",
+      "name": "Marc Vidal",
+      "handle": "@marc_vidal",
+      "feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKC77AR_zWXRTE2GOD_2Uag"
+    }
+  ],
+  "tts_voice": "es-ES-AlvaroNeural",
+  "last_briefing": {
+    "date": "2026-11-04",
+    "speech_text": "Buenos días Tomás. Aquí tienes tu informe matinal de hoy. En Ourense tenemos ahora mismo 6.1 grados con Niebla. Se espera una máxima de 15.7 y una mínima de 2.4 grados. En cuanto a la actualidad: La Voz de Galicia (Ourense): La Justicia rechaza suspender el pleno de censura en Rairiz de Veiga. La Voz de Galicia (Ourense): Muere un vecino de O Barco de 76 años al caer con su tractor por un terraplén de varios metros. En el canal de Marc Vidal, su último análisis es: Algo no cuadra en el ciberataque a los supermercados (y no es solo el hacker). Punto a destacar: El lunes por la mañana, Luke de Laed subió la persiana de su carnicería al sur de Amberes y encontró las cámaras a 18º. Que tengas un excelente día.",
+    "file": "F:\\Habana 14\\vault\\Informacion\\2026-11-04_Briefing_Matinal.md"
+  }
+}

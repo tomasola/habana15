@@ -1,0 +1,236 @@
+{
+  "camara_sensor_pasillo": {
+    "id": "camara_sensor_pasillo",
+    "name": "Cámara Visión Pasillo (Presencia Humana)",
+    "category": "presence",
+    "type": "camera_ai",
+    "room": "pasillo",
+    "protocol": "vision_ai",
+    "state": "off",
+    "value": "Sin personas (Pet-Safe)",
+    "battery": 100,
+    "lqi": 255,
+    "last_updated": null,
+    "attributes": {
+      "has_human": false,
+      "has_pet": false,
+      "is_safe_pet_only": true
+    },
+    "installed": true,
+    "notes": "Conectado y operativo en tiempo real"
+  },
+  "camara_sensor_salon": {
+    "id": "camara_sensor_salon",
+    "name": "Cámara Visión Cam720 Salón (Presencia Humana)",
+    "category": "presence",
+    "type": "camera_ai",
+    "room": "salon",
+    "protocol": "vision_ai",
+    "state": "off",
+    "value": "Sin personas (Pet-Safe)",
+    "battery": 100,
+    "lqi": 255,
+    "last_updated": null,
+    "attributes": {
+      "has_human": false,
+      "has_pet": false,
+      "is_safe_pet_only": true
+    },
+    "installed": true,
+    "notes": "Conectado y operativo en tiempo real"
+  },
+  "sensor_sonoff_snzb-04_puerta_salon": {
+    "id": "sensor_sonoff_snzb-04_puerta_salon",
+    "name": "Contacto Puerta Acceso",
+    "category": "contact",
+    "type": "door_window",
+    "room": "pasillo",
+    "protocol": "zigbee2mqtt",
+    "value": "Cerrada",
+    "state": "closed",
+    "battery": 100,
+    "lqi": 76,
+    "installed": true,
+    "notes": "Instalado y operativo",
+    "attributes": null,
+    "last_updated": "2026-11-06 22:50:31",
+    "ieee": "0x00124b002f9fd04b",
+    "friendly_name": "0x00124b002f9fd04b"
+  },
+  "sensor_de_calidad_de_aire": {
+    "id": "sensor_de_calidad_de_aire",
+    "name": "Sensor de Calidad de Aire",
+    "category": "air",
+    "type": "air_quality",
+    "room": "entrada",
+    "protocol": "zigbee2mqtt",
+    "installed": true,
+    "friendly_name": "sensor_de_calidad_de_aire",
+    "ieee": "0xa4c13868cd9105c0",
+    "notes": "Emparejado via Z2M (0xa4c13868cd9105c0)",
+    "last_updated": "2026-11-02 10:52:12",
+    "value": "365 ppm",
+    "state": "good",
+    "attributes": {
+      "co2": 365,
+      "formaldehyd": 5,
+      "humidity": 44.2,
+      "linkquality": 222,
+      "pm25": 10,
+      "temperature": 25.3,
+      "voc": 19
+    },
+    "lqi": 222
+  },
+  "sensor_limonero": {
+    "id": "sensor_limonero",
+    "name": "Sensor Limonero",
+    "category": "plant",
+    "type": "soil_sensor",
+    "room": "terraza",
+    "protocol": "zigbee2mqtt",
+    "installed": true,
+    "friendly_name": "sensor_limonero",
+    "ieee": "0xa4c138f01b49b1c9",
+    "notes": "Emparejado via Z2M (0xa4c138f01b49b1c9)",
+    "last_updated": "2026-11-07 00:22:11",
+    "battery": 86,
+    "lqi": 29,
+    "value": "82% humedad | 11°C",
+    "state": "wet",
+    "attributes": {
+      "battery": 86,
+      "linkquality": 29,
+      "soil_moisture": 82,
+      "temperature": 11,
+      "temperature_unit": "celsius"
+    }
+  },
+  "sensor_frutal": {
+    "id": "sensor_frutal",
+    "name": "Sensor Frutal",
+    "category": "plant",
+    "type": "soil_sensor",
+    "room": "terraza",
+    "protocol": "zigbee2mqtt",
+    "installed": true,
+    "friendly_name": "sensor_frutal",
+    "ieee": "0xa4c138e85fd37510",
+    "notes": "Emparejado via Z2M (0xa4c138e85fd37510)",
+    "last_updated": "2026-11-07 00:08:36",
+    "lqi": 29,
+    "value": "44% humedad | 11°C",
+    "state": "optimal",
+    "attributes": {
+      "linkquality": 29,
+      "battery": 78,
+      "soil_moisture": 44,
+      "temperature": 11,
+      "temperature_unit": "celsius"
+    },
+    "battery": 78
+  },
+  "sensor_pulsador_4_botones": {
+    "id": "sensor_pulsador_4_botones",
+    "name": "Pulsador Moes 4 Botones",
+    "category": "button",
+    "type": "wireless_button",
+    "room": "salon",
+    "protocol": "zigbee2mqtt",
+    "value": "Pulsación: 2_single",
+    "state": "2_single",
+    "battery": 100,
+    "lqi": 120,
+    "installed": true,
+    "notes": "Pulsador inalámbrico 4 botones Moes (TS0044)",
+    "attributes": {
+      "battery": 100,
+      "linkquality": 120,
+      "action": "2_single",
+      "voltage": 3000,
+      "last_action": "2_single"
+    },
+    "last_updated": "2026-11-06 22:57:03",
+    "ieee": "0x842712fffe2799a0",
+    "friendly_name": "pulsador_moes_4_botones"
+  },
+  "sensor_temperatura": {
+    "id": "sensor_temperatura",
+    "name": "Termohigrometro Interior Sonoff SNZB-02D",
+    "category": "climate",
+    "type": "temp_humidity",
+    "room": "salon",
+    "protocol": "zigbee2mqtt",
+    "installed": true,
+    "friendly_name": "sensor_temperatura",
+    "ieee": "0x0ceff6fffe69f5af",
+    "notes": "Sensor de temperatura y humedad interior Sonoff SNZB-02D con pantalla LCD",
+    "last_updated": "2026-11-07 00:35:18",
+    "battery": 100,
+    "lqi": 43,
+    "value": "16.6°C · 57.6% Hum",
+    "state": "cold",
+    "attributes": {
+      "battery": 100,
+      "comfort_humidity_max": 60,
+      "comfort_humidity_min": 40,
+      "comfort_temperature_max": 27,
+      "comfort_temperature_min": 19,
+      "humidity": 57.6,
+      "humidity_calibration": 0,
+      "linkquality": 43,
+      "temperature": 16.6,
+      "temperature_calibration": 0,
+      "temperature_units": "celsius",
+      "update": {
+        "installed_version": 8960,
+        "latest_release_notes": null,
+        "latest_source": "https://raw.githubusercontent.com/Koenkk/zigbee-OTA/master/images/Sonoff/snzb-02d_v2.3.0.ota",
+        "latest_version": 8960,
+        "state": "idle"
+      }
+    }
+  },
+  "monitor_tension_general": {
+    "id": "monitor_tension_general",
+    "name": "Monitor de Tensión General 230V",
+    "category": "power",
+    "type": "voltage_monitor",
+    "room": "entrada",
+    "protocol": "system_watchdog",
+    "state": "normal",
+    "value": "231V Estable",
+    "battery": 100,
+    "lqi": 255,
+    "installed": true,
+    "notes": "Monitor de estabilidad eléctrica general"
+  },
+  "sensor_bano_humedad": {
+    "name": "Humedad Baño",
+    "type": "humidity",
+    "room": "bano",
+    "state": {
+      "humidity": 52,
+      "temperature": 22.0
+    },
+    "last_seen": 0
+  },
+  "sensor_clima_co2_salon": {
+    "name": "Calidad Aire CO2 Salón",
+    "type": "co2",
+    "room": "salon",
+    "state": {
+      "co2": 420
+    },
+    "last_seen": 0
+  },
+  "sensor_ventana_salon": {
+    "name": "Contacto Ventana Salón",
+    "type": "contact",
+    "room": "salon",
+    "state": {
+      "contact": true
+    },
+    "last_seen": 0
+  }
+}

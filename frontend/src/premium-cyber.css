@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.pc-app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #050510;
+  color: #0ff;
+  font-family: 'Outfit', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.pc-grid-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pc-sidebar {
+  width: 280px;
+  background: rgba(10, 10, 25, 0.8);
+  backdrop-filter: blur(10px);
+  border-right: 1px solid rgba(0, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  z-index: 1;
+  box-shadow: 5px 0 20px rgba(0, 255, 255, 0.05);
+}
+
+.pc-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.pc-logo-icon {
+  color: #f0f;
+  filter: drop-shadow(0 0 5px #f0f);
+}
+
+.pc-logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.pc-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.pc-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+  background: transparent;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  color: #88f;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pc-nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.2), transparent);
+  transition: all 0.3s ease;
+}
+
+.pc-nav-btn:hover::before {
+  left: 100%;
+}
+
+.pc-nav-btn:hover {
+  background: rgba(0, 255, 255, 0.05);
+  border-color: rgba(0, 255, 255, 0.5);
+  color: #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+.pc-nav-btn.active {
+  background: rgba(0, 255, 255, 0.1);
+  border-color: #0ff;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), inset 0 0 10px rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #f0f;
+}
+
+.pc-sidebar-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+  padding-top: 20px;
+}
+
+.pc-status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #555;
+}
+
+.pc-status-indicator.online {
+  background-color: #0f0;
+  box-shadow: 0 0 10px #0f0;
+  animation: cbPulse 2s infinite;
+}
+
+@keyframes cbPulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(0, 255, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 255, 0, 0); }
+}
+
+.pc-main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.pc-header {
+  height: 80px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  background: rgba(5, 5, 16, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.pc-glitch-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  text-shadow: 2px 2px #f0f, -2px -2px #0ff;
+  letter-spacing: 2px;
+}
+
+.pc-header-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.pc-data-stream {
+  font-family: monospace;
+  color: rgba(0, 255, 255, 0.5);
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.pc-avatar {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 0, 255, 0.2);
+  border: 1px solid #f0f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+.pc-content-area {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #0ff rgba(10, 10, 25, 0.8);
+}
+
+.pc-bento-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+}
+
+/* Style children within cb-content-area to have the cyber bento look */
+.pc-content-area > * {
+  display: contents; /* If there are wrappers in App.jsx */
+}
+
+/* Fallback card styling for elements inserted directly */
+.pc-content-area .panel,
+.pc-content-area .card,
+.pc-bento-wrapper > div {
+  background: rgba(10, 15, 30, 0.6);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+}
+
+.pc-bento-wrapper > div::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-width: 0 20px 20px 0;
+  border-style: solid;
+  border-color: rgba(0, 255, 255, 0.3) #050510;
+}
+
+.pc-bento-wrapper > div:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
+}
+
+.pc-content-area h2, 
+.pc-content-area h3 {
+  color: #fff;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Form elements styling in cyber bento */
+.pc-content-area button,
+.pc-content-area input,
+.pc-content-area select {
+  font-family: 'Outfit', sans-serif;
+  border-radius: 4px;
+}
+
+.pc-content-area input,
+.pc-content-area select {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #0ff;
+  padding: 10px;
+}
+
+.pc-content-area button {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #0ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pc-content-area button:hover {
+  background: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Hide standard root bg if this theme is active */
+body:has(.pc-app-container) {
+  background: #050510;
+}
+
+/* Animación suave para los paneles */
+.pc-content-area {
+  animation: fadeUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- PREMIUM DOCK (MOBILE) --- */
+@media (max-width: 768px) {
+  .pc-sidebar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    background: rgba(10, 10, 20, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 243, 255, 0.1);
+    z-index: 1000;
+  }
+  
+  .pc-logo, .pc-sidebar-footer, .pc-nav-text {
+    display: none !important;
+  }
+
+  .pc-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .pc-nav-btn {
+    padding: 12px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.6);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pc-nav-btn.active {
+    background: rgba(0, 243, 255, 0.15);
+    color: #00f3ff;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.4), inset 0 0 10px rgba(0, 243, 255, 0.2);
+    transform: translateY(-8px) scale(1.15);
+    border: 1px solid rgba(0, 243, 255, 0.5);
+  }
+
+  .pc-main-wrapper {
+    padding-bottom: 90px; /* Dejar espacio para el dock */
+  }
+}

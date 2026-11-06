@@ -1,0 +1,59 @@
+{
+  "id": "snap_1793611412_640",
+  "timestamp": 1793611412.6402235,
+  "datetime_str": "2026-11-02 10:23:32",
+  "description": "Auto-snapshot antes de guardar widget bunker_control_luces_radio",
+  "manifest_copy": {
+    "enabled": true,
+    "version": "1.0.0",
+    "last_updated": 1793610743.2342067,
+    "widgets": [
+      {
+        "id": "bunker_demo_master_night",
+        "title": "Macro Buenas Noches (Experimental)",
+        "icon": "🌙",
+        "category": "macro",
+        "author": "IA Local",
+        "description": "Apaga todas las luces secundarias, baja persianas al 10% y fija iluminación tenue en el pasillo.",
+        "color": "#8b5cf6",
+        "actions": [
+          {
+            "entity_id": "all_lights",
+            "action": "turn_off_all"
+          },
+          {
+            "entity_id": "led_pasillo_central",
+            "action": "turn_on",
+            "brightness": 15
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_quick_terrace_relax",
+        "title": "Ambiente Terraza & Salón Cálido",
+        "icon": "🍹",
+        "category": "scene",
+        "author": "IA Local",
+        "description": "Luz tenue dorada para desconexión en el salón y terraza exterior.",
+        "color": "#f59e0b",
+        "actions": [
+          {
+            "entity_id": "luz_techo_salon",
+            "action": "turn_on"
+          },
+          {
+            "entity_id": "led_sofa_salon",
+            "action": "turn_on",
+            "brightness": 35
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      }
+    ]
+  }
+}

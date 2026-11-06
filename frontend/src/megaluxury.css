@@ -1,0 +1,493 @@
+/* ==========================================================================
+   HABANA 15 — MEGA-LUXURY EDITION ("ATELIER ALABASTER & ROYAL SAPPHIRE")
+   Conserva la distribución exacta de botones de HABANA Cyberpunk con una
+   estética de mansión de megalujo: Mármol Alabastro, Perla de Carrara,
+   Azul Zafiro Real, Cobalto Riviera y Carbón Espresso.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600;700&display=swap');
+
+body.theme-megaluxury {
+  --primary: #1d4ed8;
+  --primary-hover: rgba(37, 99, 235, 0.12);
+  --primary-glow: rgba(37, 99, 235, 0.28);
+  --secondary: #9f1239;
+  --accent: #2563eb;
+
+  --bg-dark: #f4f6fb;
+  --bg-panel: rgba(255, 255, 255, 0.95);
+  --bg-button: #f8faff;
+
+  --text: #0f172a;
+  --text-dim: #475569;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+
+  --lux-ivory: #f8fafc;
+  --lux-alabaster: #eef2f9;
+  --lux-pearl: #ffffff;
+  --lux-sapphire: #2563eb;
+  --lux-sapphire-bright: #3b82f6;
+  --lux-sapphire-deep: #1e40af;
+  --lux-cobalt: #1e3a8a;
+  --lux-espresso: #0f172a;
+  --lux-charcoal: #1e293b;
+  --lux-stone: #475569;
+  --lux-border: rgba(37, 99, 235, 0.24);
+  --lux-border-strong: rgba(29, 78, 216, 0.48);
+  --lux-shadow-card: 0 12px 34px -6px rgba(30, 58, 138, 0.09), 0 4px 12px rgba(15, 23, 42, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.96);
+  --lux-shadow-sub: 0 4px 14px rgba(30, 58, 138, 0.06), inset 0 1px 0 #ffffff;
+  --lux-shadow-btn: 0 3px 10px rgba(30, 64, 175, 0.08), inset 0 1px 0 #ffffff;
+  --lux-shadow-sapphire: 0 8px 22px rgba(37, 99, 235, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.42);
+
+  background-color: #f4f6fb !important;
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(59, 130, 246, 0.09) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(37, 99, 235, 0.07) 0%, transparent 45%),
+    linear-gradient(rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 235, 0.035) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 100% 100%, 28px 28px, 28px 28px !important;
+  color: #0f172a !important;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+/* Scrollbar de Megalujo en Zafiro Real y Alabastro */
+body.theme-megaluxury ::-webkit-scrollbar-track {
+  background: #e8eef7 !important;
+}
+body.theme-megaluxury ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #3b82f6, #1d4ed8) !important;
+  border-radius: 999px !important;
+}
+body.theme-megaluxury ::-webkit-scrollbar-thumb:hover {
+  background: #1e40af !important;
+}
+
+/* Contenedor Principal (Misma distribución de HABANA Cyberpunk) */
+body.theme-megaluxury .app-container {
+  background: transparent !important;
+  color: #0f172a !important;
+  max-width: 1440px !important;
+}
+
+/* Cabecera Superior de Mansión */
+body.theme-megaluxury .header,
+body.theme-megaluxury .header.tablet-header {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97) 0%, rgba(241, 245, 253, 0.95) 100%) !important;
+  border-bottom: 1.5px solid rgba(37, 99, 235, 0.28) !important;
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.08) !important;
+  backdrop-filter: blur(18px) !important;
+}
+
+body.theme-megaluxury .glitch {
+  font-family: 'Cormorant Garamond', 'Plus Jakarta Sans', serif !important;
+  font-weight: 700 !important;
+  letter-spacing: 3.5px !important;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 52%, #1d4ed8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: #1d4ed8 !important;
+  text-shadow: none !important;
+  animation: none !important;
+}
+
+/* ==========================================================================
+   BARRA DE NAVEGACIÓN PRINCIPAL (.bottom-nav y .bottom-nav-btn)
+   Conserva la posición exacta de HABANA Cyberpunk (Izquierda en PC / Inferior en Móvil)
+   ========================================================================== */
+body.theme-megaluxury .bottom-nav {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(238, 243, 252, 0.98) 100%) !important;
+  border-top: 1.5px solid rgba(37, 99, 235, 0.26) !important;
+  border-right: 1.5px solid rgba(37, 99, 235, 0.26) !important;
+  box-shadow: 6px 0 28px rgba(30, 58, 138, 0.09), 0 -4px 22px rgba(30, 58, 138, 0.07) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn {
+  background: linear-gradient(145deg, #ffffff 0%, #edf3fc 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.28) !important;
+  border-radius: 14px !important;
+  clip-path: none !important;
+  color: #1e293b !important;
+  box-shadow: 0 3px 10px rgba(30, 64, 175, 0.07), inset 0 1px 0 #ffffff !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.8px !important;
+  transition: all 0.22s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn span,
+body.theme-megaluxury .bottom-nav-btn svg {
+  color: #334155 !important;
+  transition: color 0.2s ease !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn:hover:not(.active) {
+  background: linear-gradient(145deg, #ffffff 0%, #dbeafe 100%) !important;
+  border-color: #2563eb !important;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.18), inset 0 1px 0 #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn:hover:not(.active) span,
+body.theme-megaluxury .bottom-nav-btn:hover:not(.active) svg {
+  color: #1d4ed8 !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn.active {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 52%, #1d4ed8 100%) !important;
+  border: 1px solid #1e40af !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.45) !important;
+}
+
+body.theme-megaluxury .bottom-nav-btn.active span,
+body.theme-megaluxury .bottom-nav-btn.active svg {
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   CUADROS, CAJAS, PANELES Y TARJETAS (TRANSFORMACIÓN UNIVERSAL DE LUJO)
+   ========================================================================== */
+body.theme-megaluxury .panel,
+body.theme-megaluxury .habana-glass-card,
+body.theme-megaluxury .domotica-domain-section,
+body.theme-megaluxury [data-lux-box="panel"] {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97) 0%, rgba(245, 248, 255, 0.95) 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.24) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--lux-shadow-card) !important;
+  color: #0f172a !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+body.theme-megaluxury .domotica-card,
+body.theme-megaluxury [data-lux-box="subcard"] {
+  background: linear-gradient(145deg, #ffffff 0%, #f1f5fd 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.20) !important;
+  border-radius: 13px !important;
+  box-shadow: var(--lux-shadow-sub) !important;
+  color: #0f172a !important;
+}
+
+body.theme-megaluxury .domotica-card:hover,
+body.theme-megaluxury [data-lux-box="subcard"]:hover {
+  border-color: rgba(37, 99, 235, 0.48) !important;
+  box-shadow: 0 8px 22px rgba(30, 58, 138, 0.11), inset 0 1px 0 #ffffff !important;
+}
+
+body.theme-megaluxury .domotica-card.is-on,
+body.theme-megaluxury [data-lux-box="active-card"] {
+  background: linear-gradient(135deg, #f8fbff 0%, #dbeafe 100%) !important;
+  border: 1.5px solid #2563eb !important;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.18), inset 0 0 18px rgba(59, 130, 246, 0.10) !important;
+  color: #0f172a !important;
+}
+
+body.theme-megaluxury .habana-config-sticky-nav,
+body.theme-megaluxury .vsp-sticky-nav,
+body.theme-megaluxury [data-lux-box="sticky"] {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(241, 245, 253, 0.94) 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.28) !important;
+  box-shadow: 0 10px 28px rgba(30, 58, 138, 0.09) !important;
+  backdrop-filter: blur(20px) !important;
+}
+
+body.theme-megaluxury aside {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(238, 243, 252, 0.98) 100%) !important;
+  border-right: 1.5px solid rgba(37, 99, 235, 0.26) !important;
+  box-shadow: 4px 0 24px rgba(30, 58, 138, 0.09) !important;
+}
+
+/* ==========================================================================
+   BOTONES DE MEGALUJO EN AZUL ZAFIRO REAL / RIVIERA
+   ========================================================================== */
+body.theme-megaluxury .cyber-btn,
+body.theme-megaluxury .cyber-button,
+body.theme-megaluxury .cyber-tab-btn,
+body.theme-megaluxury button[data-lux-btn="default"] {
+  background: linear-gradient(180deg, #ffffff 0%, #ebf2fe 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.34) !important;
+  border-radius: 11px !important;
+  color: #1e3a8a !important;
+  box-shadow: var(--lux-shadow-btn) !important;
+  font-weight: 700 !important;
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+body.theme-megaluxury .cyber-btn:hover:not(:disabled),
+body.theme-megaluxury .cyber-button:hover:not(:disabled),
+body.theme-megaluxury button[data-lux-btn="default"]:hover:not(:disabled) {
+  background: linear-gradient(135deg, #f8fbff 0%, #dbeafe 100%) !important;
+  border-color: #2563eb !important;
+  color: #1e3a8a !important;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.20), inset 0 1px 0 #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Botones Activos / Seleccionados / Primarios en Azul Zafiro Imperial */
+body.theme-megaluxury .cyber-tab-btn.active,
+body.theme-megaluxury button[data-lux-btn="active"] {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 52%, #1d4ed8 100%) !important;
+  border: 1.5px solid #1e40af !important;
+  border-radius: 11px !important;
+  color: #ffffff !important;
+  box-shadow: var(--lux-shadow-sapphire) !important;
+  font-weight: 800 !important;
+}
+
+body.theme-megaluxury button[data-lux-btn="active"] *,
+body.theme-megaluxury button[data-lux-btn="active"] span,
+body.theme-megaluxury button[data-lux-btn="active"] div,
+body.theme-megaluxury button[data-lux-btn="active"] h3,
+body.theme-megaluxury button[data-lux-btn="active"] p,
+body.theme-megaluxury button[data-lux-btn="active"] svg {
+  color: #ffffff !important;
+}
+
+/* Botones Estado Positivo / Encendido / Esmeralda Imperial */
+body.theme-megaluxury button[data-lux-btn="emerald"] {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
+  border: 1.5px solid #059669 !important;
+  border-radius: 11px !important;
+  color: #065f46 !important;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.15), inset 0 1px 0 #ffffff !important;
+  font-weight: 800 !important;
+}
+
+body.theme-megaluxury button[data-lux-btn="emerald"] span,
+body.theme-megaluxury button[data-lux-btn="emerald"] svg {
+  color: #065f46 !important;
+}
+
+/* Botones Apagar / Detener / Rubí Burdeos */
+body.theme-megaluxury .cyber-button.error,
+body.theme-megaluxury button[data-lux-btn="ruby"] {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%) !important;
+  border: 1.5px solid #e11d48 !important;
+  border-radius: 11px !important;
+  color: #9f1239 !important;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.14), inset 0 1px 0 #ffffff !important;
+  font-weight: 800 !important;
+}
+
+body.theme-megaluxury button[data-lux-btn="ruby"] span,
+body.theme-megaluxury button[data-lux-btn="ruby"] svg {
+  color: #9f1239 !important;
+}
+
+/* ==========================================================================
+   CAMPOS DE TEXTO, SELECTORES Y TABLAS ARQUITECTÓNICAS
+   ========================================================================== */
+body.theme-megaluxury input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+body.theme-megaluxury textarea,
+body.theme-megaluxury select {
+  background: #f8faff !important;
+  border: 1px solid rgba(37, 99, 235, 0.34) !important;
+  border-radius: 10px !important;
+  color: #0f172a !important;
+  box-shadow: inset 0 2px 5px rgba(30, 58, 138, 0.05) !important;
+}
+
+body.theme-megaluxury input::placeholder,
+body.theme-megaluxury textarea::placeholder {
+  color: #64748b !important;
+}
+
+body.theme-megaluxury input:focus,
+body.theme-megaluxury textarea:focus,
+body.theme-megaluxury select:focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18) !important;
+  outline: none !important;
+}
+
+body.theme-megaluxury table {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+body.theme-megaluxury thead tr {
+  background: linear-gradient(180deg, #f1f5fd 0%, #e4ecfb 100%) !important;
+  border-bottom: 1.5px solid rgba(37, 99, 235, 0.28) !important;
+}
+
+body.theme-megaluxury th {
+  color: #1e3a8a !important;
+  font-weight: 800 !important;
+}
+
+body.theme-megaluxury tbody tr {
+  border-bottom: 1px solid rgba(37, 99, 235, 0.12) !important;
+}
+
+body.theme-megaluxury tbody tr:hover {
+  background: rgba(37, 99, 235, 0.06) !important;
+}
+
+body.theme-megaluxury td {
+  color: #1e293b !important;
+}
+
+/* ==========================================================================
+   TIPOGRAFÍA Y CONTRASTE INTELIGENTE SOBRE ALABASTRO / ZAFIRO
+   ========================================================================== */
+body.theme-megaluxury h1:not(.glitch),
+body.theme-megaluxury h2,
+body.theme-megaluxury h3,
+body.theme-megaluxury h4,
+body.theme-megaluxury strong,
+body.theme-megaluxury .domotica-domain-header,
+body.theme-megaluxury .domotica-name,
+body.theme-megaluxury [data-lux-text="heading"] {
+  color: #0f172a !important;
+  text-shadow: none !important;
+}
+
+body.theme-megaluxury p,
+body.theme-megaluxury label,
+body.theme-megaluxury .domotica-state,
+body.theme-megaluxury [data-lux-text="muted"] {
+  color: #475569 !important;
+}
+
+body.theme-megaluxury [data-lux-text="gold"] {
+  color: #1d4ed8 !important;
+  text-shadow: none !important;
+}
+
+body.theme-megaluxury [data-lux-text="darkgray"],
+body.theme-megaluxury [data-lux-text="darkgray"] svg {
+  color: #334155 !important;
+  text-shadow: none !important;
+}
+
+body.theme-megaluxury [data-lux-badge="darkgray"] {
+  background: rgba(51, 65, 85, 0.12) !important;
+  border: 1px solid rgba(51, 65, 85, 0.45) !important;
+  color: #334155 !important;
+}
+
+body.theme-megaluxury [data-lux-text="darkgreen"],
+body.theme-megaluxury [data-lux-text="darkgreen"] svg {
+  color: #065f46 !important;
+  text-shadow: none !important;
+}
+
+body.theme-megaluxury [data-lux-badge="darkgreen"] {
+  background: rgba(6, 95, 70, 0.12) !important;
+  border: 1px solid rgba(6, 95, 70, 0.45) !important;
+  color: #065f46 !important;
+}
+
+body.theme-megaluxury [data-lux-badge="gold"] {
+  background: rgba(37, 99, 235, 0.12) !important;
+  border: 1px solid rgba(37, 99, 235, 0.45) !important;
+  color: #1e40af !important;
+}
+
+body.theme-megaluxury .domotica-icon-wrapper {
+  background: linear-gradient(145deg, #f8faff, #e0ebff) !important;
+  border: 1px solid rgba(37, 99, 235, 0.28) !important;
+  color: #1d4ed8 !important;
+}
+
+body.theme-megaluxury .domotica-card.is-on .domotica-icon-wrapper {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35) !important;
+}
+
+body.theme-megaluxury .cyber-toast {
+  background: linear-gradient(145deg, #ffffff, #f0f5ff) !important;
+  border: 1px solid rgba(37, 99, 235, 0.38) !important;
+  border-left: 5px solid #2563eb !important;
+  color: #0f172a !important;
+  box-shadow: 0 12px 32px rgba(30, 58, 138, 0.16) !important;
+  font-weight: 700 !important;
+}
+
+/* ==========================================================================
+   HUB ZIGBEE2MQTT (INTERRUPTORES, LUCES Y SENSORES) EN PALETA CLARA
+   ========================================================================== */
+body.theme-megaluxury .z2m-hub-wrapper { color: #0f172a; }
+
+body.theme-megaluxury .z2m-top-header,
+body.theme-megaluxury .z2m-card,
+body.theme-megaluxury .z2m-room-pills,
+body.theme-megaluxury .z2m-tab-card,
+body.theme-megaluxury .z2m-quick-plate-picker,
+body.theme-megaluxury .z2m-modal-box {
+  background: linear-gradient(145deg, #ffffff 0%, #f1f5fd 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.22) !important;
+  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.08), inset 0 1px 0 #ffffff !important;
+}
+
+body.theme-megaluxury .z2m-tab-card:hover {
+  border-color: rgba(37, 99, 235, 0.55) !important;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.14) !important;
+}
+
+body.theme-megaluxury .z2m-tab-card.active {
+  background: linear-gradient(135deg, #eaf2ff 0%, #cfe0fd 100%) !important;
+  border: 1.5px solid #2563eb !important;
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.20) !important;
+}
+
+body.theme-megaluxury .z2m-live-radar-bar {
+  background: linear-gradient(90deg, #e3f5ee 0%, #f3f7ff 100%) !important;
+  border: 1px solid rgba(5, 150, 105, 0.35) !important;
+}
+body.theme-megaluxury .z2m-live-radar-bar.flash {
+  background: linear-gradient(90deg, #dbeafe 0%, #d1fae5 100%) !important;
+  border-color: #2563eb !important;
+}
+
+body.theme-megaluxury .z2m-brand-title h1,
+body.theme-megaluxury .z2m-tab-info h2,
+body.theme-megaluxury .z2m-card-title,
+body.theme-megaluxury .z2m-section-title,
+body.theme-megaluxury .z2m-ch-name { color: #0f172a !important; }
+
+body.theme-megaluxury .z2m-brand-title p,
+body.theme-megaluxury .z2m-tab-info p,
+body.theme-megaluxury .z2m-card-sub,
+body.theme-megaluxury .z2m-quick-plate-title { color: #475569 !important; }
+
+body.theme-megaluxury .z2m-brand-icon,
+body.theme-megaluxury .z2m-tab-num {
+  background: #e0ebff !important;
+  border: 1px solid rgba(37, 99, 235, 0.35) !important;
+  box-shadow: none !important;
+  color: #1d4ed8 !important;
+}
+body.theme-megaluxury .z2m-tab-card.active .z2m-tab-num { background: #bfd6fc !important; border-color: #2563eb !important; }
+
+body.theme-megaluxury .z2m-status-pill { background: #dcfce7 !important; border-color: #15803d !important; color: #14532d !important; }
+body.theme-megaluxury .z2m-status-pill.offline { background: #ffe4e6 !important; border-color: #e11d48 !important; color: #9f1239 !important; }
+body.theme-megaluxury .z2m-radar-badge { background: #dbeafe !important; border-color: #2563eb !important; color: #1e40af !important; }
+
+body.theme-megaluxury .z2m-room-pill { background: #ffffff !important; border: 1px solid rgba(37, 99, 235, 0.3) !important; color: #1e3a8a !important; }
+body.theme-megaluxury .z2m-room-pill:hover { border-color: #2563eb !important; color: #1d4ed8 !important; }
+body.theme-megaluxury .z2m-room-pill.active { background: linear-gradient(135deg, #3b82f6, #1d4ed8) !important; border-color: #1e40af !important; color: #ffffff !important; }
+
+body.theme-megaluxury .z2m-btn { background: linear-gradient(180deg, #ffffff 0%, #ebf2fe 100%) !important; border: 1px solid rgba(37, 99, 235, 0.34) !important; color: #1e3a8a !important; }
+body.theme-megaluxury .z2m-btn:hover { background: #dbeafe !important; border-color: #2563eb !important; }
+body.theme-megaluxury .z2m-btn-cyan { background: #dbeafe !important; border-color: #2563eb !important; color: #1e40af !important; }
+body.theme-megaluxury .z2m-btn-emerald { background: #d1fae5 !important; border-color: #059669 !important; color: #065f46 !important; }
+body.theme-megaluxury .z2m-btn-amber { background: #e2e8f0 !important; border-color: #475569 !important; color: #334155 !important; }
+body.theme-megaluxury .z2m-btn-danger { background: #ffe4e6 !important; border-color: #e11d48 !important; color: #9f1239 !important; }
+
+body.theme-megaluxury .z2m-channel-row { background: #f8faff !important; border: 1px solid rgba(37, 99, 235, 0.16) !important; }
+body.theme-megaluxury .z2m-channel-row.wired { background: #f1f5f9 !important; border-left: 4px solid #475569 !important; }
+body.theme-megaluxury .z2m-channel-row.commutation { background: #f3e8ff !important; border-left: 4px solid #7c3aed !important; }
+body.theme-megaluxury .z2m-comm-chip { background: #f3e8ff !important; border-color: rgba(124, 58, 237, 0.4) !important; border-left-color: #7c3aed !important; color: #3b0764 !important; }
+
+body.theme-megaluxury .z2m-badge-on { background: #d1fae5 !important; color: #065f46 !important; border-color: #059669 !important; }
+body.theme-megaluxury .z2m-badge-off { background: #e2e8f0 !important; color: #475569 !important; border-color: #94a3b8 !important; }
+body.theme-megaluxury .z2m-badge-wire { background: #e2e8f0 !important; color: #334155 !important; border-color: #64748b !important; }
+body.theme-megaluxury .z2m-badge-comm { background: #ede9fe !important; color: #5b21b6 !important; border-color: #7c3aed !important; }
+body.theme-megaluxury .z2m-badge-free { background: #f1f5f9 !important; color: #475569 !important; border-color: #cbd5e1 !important; }
+
+body.theme-megaluxury .z2m-hub-wrapper input[type="text"],
+body.theme-megaluxury .z2m-hub-wrapper select { background: #f8faff !important; color: #0f172a !important; border: 1px solid rgba(37, 99, 235, 0.34) !important; }
+body.theme-megaluxury .z2m-hub-wrapper select option { background: #ffffff !important; color: #0f172a !important; }

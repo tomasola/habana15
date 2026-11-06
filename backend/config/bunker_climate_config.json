@@ -1,0 +1,56 @@
+{
+  "hvac": {
+    "installed": false,
+    "power": false,
+    "mode": "cool",
+    "target_temperature": 22.0,
+    "fan_speed": "auto",
+    "eco_mode": true,
+    "notes": "Módulo en preparación. Listo para vincular pasarela IR / Tuya / Daikin / Mitsubishi."
+  },
+  "covers_calibration": {
+    "cover.persiana_principal": {
+      "time_up": 22.0,
+      "time_down": 17.0,
+      "motor_reversal": false
+    },
+    "cover.persiana_salon": {
+      "time_up": 22.0,
+      "time_down": 17.0,
+      "motor_reversal": true
+    },
+    "cover.persiana_salon_puerta": {
+      "time_up": 3.0,
+      "time_down": 69.0,
+      "motor_reversal": false
+    },
+    "cover.persiana_andrea": {
+      "time_up": 22.0,
+      "time_down": 17.0,
+      "motor_reversal": false
+    }
+  },
+  "automation_rules": [
+    {
+      "id": "rule_heat_protection",
+      "name": "Protección Térmica (Verano)",
+      "enabled": false,
+      "condition": "Temp exterior > 26°C y sol directo",
+      "action": "Bajar persiana salón al 20% para aislar del calor"
+    },
+    {
+      "id": "rule_night_insulation",
+      "name": "Aislamiento Nocturno (Invierno)",
+      "enabled": true,
+      "condition": "A las 23:00 o Modo Buenas Noches",
+      "action": "Bajar todas las persianas al 0% para retener temperatura"
+    },
+    {
+      "id": "rule_morning_ventilation",
+      "name": "Ventilación Matinal",
+      "enabled": false,
+      "condition": "Apertura al 40% al amanecer si la calidad del aire lo requiere",
+      "action": "Subir persiana a media altura"
+    }
+  ]
+}

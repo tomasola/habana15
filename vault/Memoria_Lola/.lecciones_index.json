@@ -1,0 +1,42 @@
+[
+  {
+    "id": "LECCION-20261103-130229",
+    "title": "Encendido general",
+    "failure_context": "No se especificó si incluir tiras LED",
+    "correction": "Incluir todas las luces y tiras",
+    "rule": "Al pedir encender luces de una habitación, encender bombillas y tiras LED",
+    "source": "Tomas",
+    "date": "2026-11-03 13:02:29",
+    "active": true
+  },
+  {
+    "id": "LECCION-20261103-130121",
+    "title": "Apagado Tiras LED",
+    "failure_context": "No especificó habitación",
+    "correction": "Apagar todas las tiras LED disponibles",
+    "rule": "\"tiraned\" o similar se interpreta como apagado de todas las tiras LED del hogar",
+    "source": "Tomas",
+    "date": "2026-11-03 13:01:21",
+    "active": true
+  },
+  {
+    "id": "LECCION-20261102-01",
+    "title": "Apagado General de Luces",
+    "failure_context": "Dejar tiras LED o pilotos encendidos al pedir apagar todo",
+    "correction": "El protocolo de apagado general debe abarcar TODOS los IDs de luz y tiras LED sin excepción",
+    "rule": "Al pedir 'apaga todo' o 'buenas noches', emitir apagado para todas las bombillas y tiras registradas",
+    "source": "Tomas",
+    "date": "2026-11-02 21:47:30",
+    "active": true
+  },
+  {
+    "id": "LECCION-20261102-02",
+    "title": "Luz de Fondo en Interruptores",
+    "failure_context": "Activar el piloto de fondo creyendo que es una luz de techo",
+    "correction": "Las entidades con nombre 'Luz de fondo' son solo el piloto LED indicador de pared",
+    "rule": "Nunca encender 'Luz de fondo' salvo que el usuario lo pida de forma explícita",
+    "source": "Tomas",
+    "date": "2026-11-02 22:15:00",
+    "active": true
+  }
+]

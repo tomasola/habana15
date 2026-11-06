@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+*/node_modules/
+frontend/node_modules/
+services/zigbee2mqtt/node_modules/
+
+# Production builds
+dist/
+build/
+frontend/dist/
+
+# Python & Environment
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Sensitive credentials & Environment files
+.env
+*.env
+backend/.env
+!*.env.example
+
+# Logs and runtime telemetry
+*.log
+logs/
+backend/logs/
+*.pid
+
+# Heavy installer binaries
+services/plex/downloads/
+*.exe
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

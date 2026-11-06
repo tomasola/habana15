@@ -1,0 +1,139 @@
+/* neobrutalism.css */
+:root {
+  --neo-bg: #fdf5e6;
+  --neo-primary: #ff5252;
+  --neo-secondary: #00d2d3;
+  --neo-accent: #ffb142;
+  --neo-text: #2d3436;
+  --neo-border: 4px solid #2d3436;
+}
+
+body.theme-neobrutalism {
+  background-color: var(--neo-bg);
+  color: var(--neo-text);
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.neobrutalism-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--neo-bg);
+}
+
+.neo-header {
+  border-bottom: var(--neo-border);
+  background-color: var(--neo-accent);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 8px 0 var(--neo-text);
+  z-index: 10;
+}
+
+.neo-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.neo-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.neo-sidebar {
+  width: 250px;
+  border-right: var(--neo-border);
+  background-color: var(--neo-secondary);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  z-index: 5;
+}
+
+.neo-nav-btn {
+  background-color: #fff;
+  border: var(--neo-border);
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 4px 4px 0 var(--neo-text);
+  transition: all 0.1s;
+}
+
+.neo-nav-btn:active, .neo-nav-btn.active {
+  transform: translate(4px, 4px);
+  box-shadow: 0 0 0 var(--neo-text);
+  background-color: var(--neo-primary);
+  color: white;
+}
+
+.neo-main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.neo-content-wrapper {
+  background: #fff;
+  border: var(--neo-border);
+  box-shadow: 8px 8px 0 var(--neo-text);
+  padding: 2rem;
+  min-height: calc(100% - 4rem);
+}
+
+/* Overrides for app content inside Neobrutalism */
+.theme-neobrutalism .panel {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--neo-text);
+}
+
+.theme-neobrutalism .panel h2, .theme-neobrutalism .panel h3 {
+  color: var(--neo-text) !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: var(--neo-border);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.theme-neobrutalism .cyber-btn, .theme-neobrutalism .cyber-button {
+  background-color: #fff !important;
+  border: var(--neo-border) !important;
+  color: var(--neo-text) !important;
+  box-shadow: 4px 4px 0 var(--neo-text) !important;
+  font-family: inherit !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  transition: all 0.1s !important;
+}
+
+.theme-neobrutalism .cyber-btn:active, .theme-neobrutalism .cyber-button:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 0 0 0 var(--neo-text) !important;
+  background-color: var(--neo-primary) !important;
+}
+
+.theme-neobrutalism input, .theme-neobrutalism textarea, .theme-neobrutalism select {
+  background-color: #fff !important;
+  border: var(--neo-border) !important;
+  color: var(--neo-text) !important;
+  padding: 1rem !important;
+  font-family: inherit !important;
+  box-shadow: inset 4px 4px 0 rgba(0,0,0,0.05) !important;
+}

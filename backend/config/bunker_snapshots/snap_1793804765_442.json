@@ -1,0 +1,31 @@
+{
+  "id": "snap_1793804765_442",
+  "timestamp": 1793804765.4422312,
+  "datetime_str": "2026-11-04 16:06:05",
+  "description": "Auto-snapshot antes de guardar widget bunker_panel_de_control_rápido_1793804765",
+  "manifest_copy": {
+    "enabled": true,
+    "version": "1.0.0",
+    "last_updated": 1793748000.0,
+    "widgets": [
+      {
+        "id": "widget_briefing_matinal",
+        "title": "🌅 Briefing Matinal & Información",
+        "icon": "📡",
+        "category": "macro",
+        "author": "IA Búnker",
+        "description": "Meteorología en Ourense, titulares del día y último resumen de Marc Vidal locutado en altavoces.",
+        "color": "#00f3ff",
+        "created_at": 1793748000.0,
+        "official": false,
+        "actions": [
+          {
+            "type": "custom",
+            "endpoint": "/api/bunker/information/speak",
+            "action": "briefing_audio"
+          }
+        ]
+      }
+    ]
+  }
+}

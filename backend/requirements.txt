@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+langchain
+paho-mqtt
+pychromecast
+requests
+sqlalchemy
+websockets
+python-dotenv
+httpx
+#face_recognition
+#opencv-python-headless

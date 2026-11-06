@@ -1,0 +1,1459 @@
+{
+  "version": "1.0.0",
+  "broker": {
+    "host": "127.0.0.1",
+    "port": 1883,
+    "base_topic": "zigbee2mqtt"
+  },
+  "plates": {
+    "andrea_placa_entrada": {
+      "ieee": "0xa4c138726ed4b679",
+      "friendly_name": "andrea_placa_entrada",
+      "name": "Placa Entrada Andrea",
+      "room": "andrea",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Tira LED Foso Entrada Andrea",
+          "assigned_light_id": "led_foso_andrea",
+          "assigned_light_name": "Tira LED Foso Entrada Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Cable fisico de Lámpara de Lazos Cama Andrea",
+          "assigned_light_id": "luz_lazos_andrea",
+          "assigned_light_name": "Lámpara de Lazos Cama Andrea",
+          "assigned_role": "power_source"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Luz Oculta Viga / Ventana Andrea",
+          "assigned_light_id": "luz_ventana_andrea",
+          "assigned_light_name": "Luz Oculta Viga / Ventana Andrea",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "andrea_placa_cama_izq": {
+      "ieee": "0xa4c13884fc6da4fd",
+      "friendly_name": "andrea_placa_cama_izq",
+      "name": "Placa Cama Izquierda Andrea",
+      "room": "andrea",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Luz Oculta Viga / Ventana Andrea",
+          "assigned_light_id": "luz_ventana_andrea",
+          "assigned_light_name": "Luz Oculta Viga / Ventana Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Lámpara de Lazos Cama Andrea",
+          "assigned_light_id": "luz_lazos_andrea",
+          "assigned_light_name": "Lámpara de Lazos Cama Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Tira LED Cabecero Cama Andrea",
+          "assigned_light_id": "led_cama_andrea",
+          "assigned_light_name": "Tira LED Cabecero Cama Andrea",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "andrea_placa_cama_der": {
+      "ieee": "0xa4c138981a13a803",
+      "friendly_name": "andrea_placa_cama_der",
+      "name": "Placa Cama Derecha Andrea",
+      "room": "andrea",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Luz Oculta Viga / Ventana Andrea",
+          "assigned_light_id": "luz_ventana_andrea",
+          "assigned_light_name": "Luz Oculta Viga / Ventana Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Lámpara de Lazos Cama Andrea",
+          "assigned_light_id": "luz_lazos_andrea",
+          "assigned_light_name": "Lámpara de Lazos Cama Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Tira LED Cabecero Cama Andrea",
+          "assigned_light_id": "led_cama_andrea",
+          "assigned_light_name": "Tira LED Cabecero Cama Andrea",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "andrea_placa_ventana": {
+      "ieee": "0xa4c138a64c8e79fa",
+      "friendly_name": "andrea_placa_ventana",
+      "name": "Placa Ventana Andrea",
+      "room": "andrea",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Cable fisico de Luz Oculta Viga / Ventana Andrea",
+          "assigned_light_id": "luz_ventana_andrea",
+          "assigned_light_name": "Luz Oculta Viga / Ventana Andrea",
+          "assigned_role": "power_source"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Lámpara de Lazos Cama Andrea",
+          "assigned_light_id": "luz_lazos_andrea",
+          "assigned_light_name": "Lámpara de Lazos Cama Andrea",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada de Tira LED Foso Entrada Andrea",
+          "assigned_light_id": "led_foso_andrea",
+          "assigned_light_name": "Tira LED Foso Entrada Andrea",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "placa_salon_entrada": {
+      "ieee": "0xa4c1380a5cdb5493",
+      "friendly_name": "placa_salon_entrada",
+      "name": "Placa Entrada Salón 1 (Principal)",
+      "room": "salon",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1 (Arriba/Izq)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Cable físico de Luz del Comedor",
+          "assigned_light_id": "luz_luz_del_comedor_d9b2",
+          "assigned_light_name": "Luz del Comedor",
+          "assigned_role": "power_source"
+        },
+        "state_l2": {
+          "label": "Botón L2 (Abajo/Der)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Cable físico de Luz Principal del Salón",
+          "assigned_light_id": "luz_luz_principal_del_salon_53c1",
+          "assigned_light_name": "Luz Principal del Salón",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "salon_entrada_2": {
+      "ieee": "0xa4c1387e7d77b0c3",
+      "friendly_name": "salon_entrada_2",
+      "name": "Placa Entrada Salón 2 (Auxiliar)",
+      "room": "salon",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Botón físico auxiliar entrada salón",
+          "assigned_light_id": "luz_comedor_salon",
+          "assigned_light_name": "Luz Ventana Salón",
+          "assigned_role": "commutation"
+        },
+        "state_l2": {
+          "label": "Botón L2",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Botón físico auxiliar entrada salón",
+          "assigned_light_id": "luz_techo_salon",
+          "assigned_light_name": "Luz Terraza Exterior Salón",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "salon_ventana_1": {
+      "ieee": "0xa4c138086ac4ae26",
+      "friendly_name": "salon_ventana_1",
+      "name": "Placa Sofá / Ventana Salón 1 (3 Botones)",
+      "room": "salon",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada en zona sofá",
+          "assigned_light_id": "luz_luz_del_comedor_d9b2",
+          "assigned_light_name": "Luz del Comedor",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada en zona sofá",
+          "assigned_light_id": "luz_luz_principal_del_salon_53c1",
+          "assigned_light_name": "Luz Principal del Salón",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada en zona sofá",
+          "assigned_light_id": "led_sofa_salon",
+          "assigned_light_name": "Tira LED Sofá Salón",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "salon_ventana_2": {
+      "ieee": "0xa4c13826590eb6b1",
+      "friendly_name": "salon_ventana_2",
+      "name": "Placa Ventana / Terraza Salón 2 (2 Botones)",
+      "room": "salon",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Conmutada Luz del Comedor",
+          "assigned_light_id": "luz_comedor_salon",
+          "assigned_light_name": "Luz Ventana Salón",
+          "assigned_role": "power_source"
+        },
+        "state_l2": {
+          "label": "Botón L2",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Conmutada Luz del Salón",
+          "assigned_light_id": "luz_techo_salon",
+          "assigned_light_name": "Luz Terraza Exterior Salón",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "salon_dimmer": {
+      "ieee": "0xa4c1385f06f7bb69",
+      "friendly_name": "salon_dimmer",
+      "name": "Dimmer Táctil Entrada Salón (Secuenciador LED)",
+      "room": "salon",
+      "model": "TS0601 Dimmer 3 Botones",
+      "channels": {
+        "state": {
+          "label": "Botón Central + Subir/Bajar Brillo",
+          "has_physical_wire": false,
+          "role": "dimmer_sequencer",
+          "notes": "Controla la secuencia de 9 pasos de las 3 Tiras LED del Salón",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "entrada_placa_principal": {
+      "ieee": "0xa4c1380c58a85b6c",
+      "friendly_name": "entrada_placa_principal",
+      "name": "Placa Entrada Principal",
+      "room": "pasillo",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Luz Entrada Principal",
+          "assigned_light_id": "luz_luz_pasillo_dormitorio_9c4b",
+          "assigned_light_name": "luz pasillo dormitorio",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Conmutada Pasillo",
+          "assigned_light_id": "luz_techo_pasillo",
+          "assigned_light_name": "Luz Techo Pasillo",
+          "assigned_role": "power_source"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Libre / Conmutada",
+          "assigned_light_id": "luz_luz_fuera_7d73",
+          "assigned_light_name": "Luz Fuera",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "pasillo_habitacion": {
+      "ieee": "0xa4c138552bb8ecd8",
+      "friendly_name": "pasillo_habitacion",
+      "name": "Placa Pasillo Dormitorio",
+      "room": "pasillo",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Luz Pasillo",
+          "assigned_light_id": "luz_luz_pasillo_dormitorio_9c4b",
+          "assigned_light_name": "luz pasillo dormitorio",
+          "assigned_role": "power_source"
+        },
+        "state_l2": {
+          "label": "Botón L2",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Tira LED Pasillo",
+          "assigned_light_id": "luz_techo_pasillo",
+          "assigned_light_name": "Luz Techo Pasillo",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "pasillo_bano_andrea": {
+      "ieee": "0xa4c138d1be9a4740",
+      "friendly_name": "pasillo_bano_andrea",
+      "name": "Placa Exterior Baño / Pasillo",
+      "room": "bano",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Luz Principal Baño",
+          "assigned_light_id": "luz_techo_bano",
+          "assigned_light_name": "Luz Principal Baño",
+          "assigned_role": "power_source"
+        },
+        "state_l2": {
+          "label": "Botón L2",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Tira LED Espejo Baño",
+          "assigned_light_id": "led_espejo_bano",
+          "assigned_light_name": "Tira LED Baño",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "principal_cama_der": {
+      "ieee": "0xa4c1385a21c3b3e1",
+      "friendly_name": "principal_cama_der",
+      "name": "Placa Cama Derecha Principal",
+      "room": "principal",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Luz Techo Dormitorio Principal",
+          "assigned_light_id": "luz_techo_principal",
+          "assigned_light_name": "Luz Techo Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Tira LED Dormitorio Principal",
+          "assigned_light_id": "led_dormitorio_principal",
+          "assigned_light_name": "Tira LED Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Luz Ventana Dormitorio Principal",
+          "assigned_light_id": "luz_ventana_principal",
+          "assigned_light_name": "Luz Ventana Dormitorio Principal",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "principal_ventana": {
+      "ieee": "0xa4c1381a959f20a2",
+      "friendly_name": "principal_ventana",
+      "name": "Placa Ventana Principal",
+      "room": "principal",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Luz Techo Dormitorio Principal",
+          "assigned_light_id": "luz_techo_principal",
+          "assigned_light_name": "Luz Techo Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Libre / Conmutada",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Libre / Conmutada",
+          "assigned_light_id": "luz_ventana_principal",
+          "assigned_light_name": "Luz Ventana Dormitorio Principal",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "principal_cama_izq": {
+      "ieee": "0xa4c138d551d2b6ca",
+      "friendly_name": "principal_cama_izq",
+      "name": "Placa Cama Izquierda Principal",
+      "room": "principal",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Luz Techo Dormitorio Principal",
+          "assigned_light_id": "luz_techo_principal",
+          "assigned_light_name": "Luz Techo Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Tira LED Dormitorio Principal",
+          "assigned_light_id": "led_dormitorio_principal",
+          "assigned_light_name": "Tira LED Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Luz Ventana Dormitorio Principal",
+          "assigned_light_id": "luz_ventana_principal",
+          "assigned_light_name": "Luz Ventana Dormitorio Principal",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "principal_armario": {
+      "ieee": "0xa4c1384ad550e8b4",
+      "friendly_name": "principal_armario",
+      "name": "Placa Armario Principal",
+      "room": "principal",
+      "model": "TS0003 (3 Botones)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "Conmutada Luz Techo Dormitorio Principal",
+          "assigned_light_id": "luz_techo_principal",
+          "assigned_light_name": "Luz Techo Dormitorio Principal",
+          "assigned_role": "power_source"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Tira LED Dormitorio Principal",
+          "assigned_light_id": "led_dormitorio_principal",
+          "assigned_light_name": "Tira LED Dormitorio Principal",
+          "assigned_role": "commutation"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Libre / Conmutada",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "pasillo_cocina": {
+      "ieee": "0xa4c13812b26f9a88",
+      "friendly_name": "pasillo_cocina",
+      "name": "Placa Pasillo Cocina",
+      "room": "pasillo",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Luz Techo Cocina",
+          "assigned_light_id": "luz_luz_pasillo_dormitorio_9c4b",
+          "assigned_light_name": "luz pasillo dormitorio",
+          "assigned_role": "commutation"
+        },
+        "state_l2": {
+          "label": "Botón L2",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "Conmutada Pasillo",
+          "assigned_light_id": "luz_techo_pasillo",
+          "assigned_light_name": "Luz Techo Pasillo",
+          "assigned_role": "commutation"
+        }
+      }
+    },
+    "cocina_luces": {
+      "ieee": "0xa4c13840ab4c2d18",
+      "friendly_name": "cocina_luces",
+      "name": "Placa Interruptor Cocina",
+      "room": "cocina",
+      "model": "TS0002 (2 Botones)",
+      "channels": {
+        "state_l1": {
+          "label": "Botón L1 (Mesa)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "",
+          "assigned_light_id": "luz_cocina_mesa_7f97",
+          "assigned_light_name": "Luz Cocina Mesa",
+          "assigned_role": "power_source"
+        },
+        "state_l2": {
+          "label": "Botón L2 (Encimera)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "",
+          "assigned_light_id": "luz_cocina_encimera_6ce2",
+          "assigned_light_name": "Luz Cocina Encimera",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "baño_pincipal": {
+      "ieee": "0xa4c1383d5e1123a5",
+      "friendly_name": "baño_pincipal",
+      "name": "Baño Pincipal",
+      "room": "salon",
+      "model": "Zigbee Switch (3 canales)",
+      "channels": {
+        "state_left": {
+          "label": "Botón 1 (Izquierdo)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "",
+          "assigned_light_id": "luz_estractor_7973",
+          "assigned_light_name": "Luz Baño Principal",
+          "assigned_role": "power_source"
+        },
+        "state_center": {
+          "label": "Botón 2 (Central)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "",
+          "assigned_light_id": "luz_luz_baño_principal_2e8f",
+          "assigned_light_name": "Led Baño Principal",
+          "assigned_role": "power_source"
+        },
+        "state_right": {
+          "label": "Botón 3 (Derecho)",
+          "has_physical_wire": true,
+          "role": "wired_load",
+          "notes": "",
+          "assigned_light_id": "luz_estractor_baño_0584",
+          "assigned_light_name": "Estractor Baño",
+          "assigned_role": "power_source"
+        }
+      }
+    },
+    "0x00124b002f9fd04b": {
+      "ieee": "0x00124b002f9fd04b",
+      "friendly_name": "0x00124b002f9fd04b",
+      "name": "0x00124b002f9fd04b",
+      "room": "salon",
+      "model": "Interruptor Zigbee",
+      "channels": {
+        "state_l1": {
+          "label": "BotÃ³n L1 (Arriba/Izq)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        },
+        "state_l2": {
+          "label": "BotÃ³n L2 (Abajo/Der)",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "sensor_de_calidad_de_aire": {
+      "ieee": "0xa4c13868cd9105c0",
+      "friendly_name": "sensor_de_calidad_de_aire",
+      "name": "Sensor De Calidad De Aire",
+      "room": "salon",
+      "model": "Zigbee Switch (1 canales)",
+      "channels": {
+        "state": {
+          "label": "BotÃ³n Ãšnico",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "sensor_limonero": {
+      "ieee": "0xa4c138f01b49b1c9",
+      "friendly_name": "sensor_limonero",
+      "name": "Sensor Limonero",
+      "room": "salon",
+      "model": "Zigbee Switch (1 canales)",
+      "channels": {
+        "state": {
+          "label": "BotÃ³n Ãšnico",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "sensor_frutal": {
+      "ieee": "0xa4c138e85fd37510",
+      "friendly_name": "sensor_frutal",
+      "name": "Sensor Frutal",
+      "room": "salon",
+      "model": "Zigbee Switch (1 canales)",
+      "channels": {
+        "state": {
+          "label": "BotÃ³n Ãšnico",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "pulsador_moes_4_botones": {
+      "ieee": "0x842712fffe2799a0",
+      "friendly_name": "pulsador_moes_4_botones",
+      "name": "Pulsador Moes 4 Botones",
+      "room": "salon",
+      "model": "Zigbee Switch (1 canales)",
+      "channels": {
+        "state": {
+          "label": "BotÃ³n Ãšnico",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    },
+    "sensor_temperatura": {
+      "ieee": "0x0ceff6fffe69f5af",
+      "friendly_name": "sensor_temperatura",
+      "name": "Sensor Temperatura",
+      "room": "salon",
+      "model": "Zigbee Switch (1 canales)",
+      "channels": {
+        "state": {
+          "label": "BotÃ³n Ãšnico",
+          "has_physical_wire": false,
+          "role": "commutation_button",
+          "notes": "",
+          "assigned_light_id": null,
+          "assigned_light_name": null,
+          "assigned_role": "free"
+        }
+      }
+    }
+  },
+  "led_controllers": {
+    "andrea_led_cama": {
+      "ieee": "0xa4c1389d50e759ce",
+      "friendly_name": "andrea_led_cama",
+      "name": "Controlador Tira LED Cabecero Andrea",
+      "room": "andrea",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "andrea_led_foso_entrada": {
+      "ieee": "0xa4c13872efeeaa29",
+      "friendly_name": "andrea_led_foso_entrada",
+      "name": "Controlador Tira LED Foso Entrada Andrea",
+      "room": "andrea",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "salon_led_sofa": {
+      "ieee": "0xa4c1389ef30608f4",
+      "friendly_name": "salon_led_sofa",
+      "name": "Controlador Tira LED Sofá Salón",
+      "room": "salon",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "salon_led_tv": {
+      "ieee": "0xa4c1383cc2b81284",
+      "friendly_name": "salon_led_tv",
+      "name": "Controlador Tira LED Mueble TV Salón",
+      "room": "salon",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "salon_led_aparador": {
+      "ieee": "0xa4c13898f4fea484",
+      "friendly_name": "salon_led_aparador",
+      "name": "Controlador Tira LED Aparador Salón",
+      "room": "salon",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "pasillo_led": {
+      "ieee": "0xa4c138b73ca4086d",
+      "friendly_name": "pasillo_led",
+      "name": "Controlador Tira LED Pasillo",
+      "room": "pasillo",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "bano_led": {
+      "ieee": "0xa4c1387e1a9b052e",
+      "friendly_name": "bano_led",
+      "name": "Controlador Tira LED Baño",
+      "room": "bano",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    },
+    "principal_led": {
+      "ieee": "0xa4c1387b00a81633",
+      "friendly_name": "principal_led",
+      "name": "Controlador Tira LED Dormitorio Principal",
+      "room": "principal",
+      "supports_brightness": true,
+      "supports_color_temp": true
+    }
+  },
+  "real_lights": {
+    "luz_ventana_andrea": {
+      "id": "luz_ventana_andrea",
+      "name": "Luz Oculta Viga / Ventana Andrea",
+      "room": "andrea",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "andrea_placa_ventana",
+        "channel": "state_left"
+      },
+      "commutation_switches": [
+        {
+          "device": "andrea_placa_entrada",
+          "channel": "state_right"
+        },
+        {
+          "device": "andrea_placa_cama_izq",
+          "channel": "state_left"
+        },
+        {
+          "device": "andrea_placa_cama_der",
+          "channel": "state_left"
+        }
+      ],
+      "habana_entity_id": "luz_ventana_andrea",
+      "state": "OFF"
+    },
+    "led_cama_andrea": {
+      "id": "led_cama_andrea",
+      "name": "Tira LED Cabecero Cama Andrea",
+      "room": "andrea",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "andrea_led_cama",
+        "channel": "state"
+      },
+      "commutation_switches": [
+        {
+          "device": "andrea_placa_cama_izq",
+          "channel": "state_right"
+        },
+        {
+          "device": "andrea_placa_cama_der",
+          "channel": "state_right"
+        }
+      ],
+      "habana_entity_id": "led_cama_andrea",
+      "state": "OFF"
+    },
+    "led_foso_andrea": {
+      "id": "led_foso_andrea",
+      "name": "Tira LED Foso Entrada Andrea",
+      "room": "andrea",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "andrea_led_foso_entrada",
+        "channel": "state"
+      },
+      "commutation_switches": [
+        {
+          "device": "andrea_placa_entrada",
+          "channel": "state_left"
+        },
+        {
+          "device": "andrea_placa_ventana",
+          "channel": "state_right"
+        }
+      ],
+      "habana_entity_id": "led_foso_andrea",
+      "state": "OFF"
+    },
+    "luz_comedor_salon": {
+      "id": "luz_comedor_salon",
+      "name": "Luz Ventana Salón",
+      "room": "salon",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "salon_ventana_2",
+        "channel": "state_l1"
+      },
+      "commutation_switches": [
+        {
+          "device": "salon_entrada_2",
+          "channel": "state_l1"
+        }
+      ],
+      "habana_entity_id": "luz_comedor_salon",
+      "state": "OFF"
+    },
+    "luz_techo_salon": {
+      "id": "luz_techo_salon",
+      "name": "Luz Terraza Exterior Salón",
+      "room": "salon",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "salon_ventana_2",
+        "channel": "state_l2"
+      },
+      "commutation_switches": [
+        {
+          "device": "salon_entrada_2",
+          "channel": "state_l2"
+        }
+      ],
+      "habana_entity_id": "luz_techo_salon",
+      "state": "OFF"
+    },
+    "led_aparador_salon": {
+      "id": "led_aparador_salon",
+      "name": "Tira LED Aparador Salón",
+      "room": "salon",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "salon_led_aparador",
+        "channel": "state"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "led_aparador_salon",
+      "state": "OFF"
+    },
+    "led_sofa_salon": {
+      "id": "led_sofa_salon",
+      "name": "Tira LED Sofá Salón",
+      "room": "salon",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "salon_led_sofa",
+        "channel": "state"
+      },
+      "commutation_switches": [
+        {
+          "device": "salon_ventana_1",
+          "channel": "state_right"
+        }
+      ],
+      "habana_entity_id": "led_sofa_salon",
+      "state": "ON"
+    },
+    "led_tv_salon": {
+      "id": "led_tv_salon",
+      "name": "Tira LED Mueble TV Salón",
+      "room": "salon",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "salon_led_tv",
+        "channel": "state"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "led_tv_salon",
+      "state": "ON"
+    },
+    "luz_techo_pasillo": {
+      "id": "luz_techo_pasillo",
+      "name": "Luz Techo Pasillo",
+      "room": "pasillo",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "entrada_placa_principal",
+        "channel": "state_center"
+      },
+      "commutation_switches": [
+        {
+          "device": "pasillo_habitacion",
+          "channel": "state_l2"
+        },
+        {
+          "device": "pasillo_cocina",
+          "channel": "state_l2"
+        }
+      ],
+      "habana_entity_id": "luz_techo_pasillo",
+      "state": "ON"
+    },
+    "led_pasillo_central": {
+      "id": "led_pasillo_central",
+      "name": "Tira LED Pasillo Central",
+      "room": "pasillo",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "pasillo_led",
+        "channel": "state"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "led_pasillo_central",
+      "state": "OFF"
+    },
+    "luz_techo_bano": {
+      "id": "luz_techo_bano",
+      "name": "Luz Principal Baño",
+      "room": "bano",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "pasillo_bano_andrea",
+        "channel": "state_l1"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_techo_bano",
+      "state": "OFF"
+    },
+    "led_espejo_bano": {
+      "id": "led_espejo_bano",
+      "name": "Tira LED Baño",
+      "room": "bano",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "bano_led",
+        "channel": "state"
+      },
+      "commutation_switches": [
+        {
+          "device": "pasillo_bano_andrea",
+          "channel": "state_l2"
+        }
+      ],
+      "habana_entity_id": "led_espejo_bano",
+      "state": "OFF"
+    },
+    "led_dormitorio_principal": {
+      "id": "led_dormitorio_principal",
+      "name": "Tira LED Dormitorio Principal",
+      "room": "principal",
+      "kind": "led_controller",
+      "power_source": {
+        "type": "led_controller",
+        "device": "principal_led",
+        "channel": "state"
+      },
+      "commutation_switches": [
+        {
+          "device": "principal_cama_izq",
+          "channel": "state_center"
+        },
+        {
+          "device": "principal_cama_der",
+          "channel": "state_center"
+        },
+        {
+          "device": "principal_armario",
+          "channel": "state_center"
+        }
+      ],
+      "habana_entity_id": "led_dormitorio_principal",
+      "state": "OFF"
+    },
+    "luz_luz_del_comedor_d9b2": {
+      "id": "luz_luz_del_comedor_d9b2",
+      "name": "Luz del Comedor",
+      "room": "salon",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "placa_salon_entrada",
+        "channel": "state_l1"
+      },
+      "commutation_switches": [
+        {
+          "device": "salon_ventana_1",
+          "channel": "state_left"
+        }
+      ],
+      "habana_entity_id": "luz_luz_del_comedor_d9b2",
+      "state": "OFF"
+    },
+    "luz_luz_principal_del_salon_53c1": {
+      "id": "luz_luz_principal_del_salon_53c1",
+      "name": "Luz Principal del Salón",
+      "room": "salon",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "placa_salon_entrada",
+        "channel": "state_l2"
+      },
+      "commutation_switches": [
+        {
+          "device": "salon_ventana_1",
+          "channel": "state_center"
+        }
+      ],
+      "habana_entity_id": "luz_luz_principal_del_salon_53c1",
+      "state": "OFF"
+    },
+    "luz_techo_principal": {
+      "id": "luz_techo_principal",
+      "name": "Luz Techo Dormitorio Principal",
+      "room": "principal",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "principal_armario",
+        "channel": "state_left"
+      },
+      "commutation_switches": [
+        {
+          "device": "principal_ventana",
+          "channel": "state_left"
+        },
+        {
+          "device": "principal_cama_izq",
+          "channel": "state_left"
+        },
+        {
+          "device": "principal_cama_der",
+          "channel": "state_left"
+        }
+      ],
+      "habana_entity_id": "luz_techo_principal",
+      "state": "OFF"
+    },
+    "luz_ventana_principal": {
+      "id": "luz_ventana_principal",
+      "name": "Luz Ventana Dormitorio Principal",
+      "room": "principal",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "principal_ventana",
+        "channel": "state_right"
+      },
+      "commutation_switches": [
+        {
+          "device": "principal_cama_izq",
+          "channel": "state_right"
+        },
+        {
+          "device": "principal_cama_der",
+          "channel": "state_right"
+        }
+      ],
+      "habana_entity_id": "luz_ventana_principal",
+      "state": "OFF"
+    },
+    "luz_lazos_andrea": {
+      "id": "luz_lazos_andrea",
+      "name": "Lámpara de Lazos Cama Andrea",
+      "room": "andrea",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "andrea_placa_entrada",
+        "channel": "state_center"
+      },
+      "commutation_switches": [
+        {
+          "device": "andrea_placa_cama_izq",
+          "channel": "state_center"
+        },
+        {
+          "device": "andrea_placa_cama_der",
+          "channel": "state_center"
+        },
+        {
+          "device": "andrea_placa_ventana",
+          "channel": "state_center"
+        }
+      ],
+      "habana_entity_id": "luz_lazos_andrea",
+      "state": "OFF"
+    },
+    "luz_cocina_mesa_7f97": {
+      "id": "luz_cocina_mesa_7f97",
+      "name": "Luz Cocina Mesa",
+      "room": "cocina",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "cocina_luces",
+        "channel": "state_l1"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_cocina_mesa_7f97",
+      "state": "OFF"
+    },
+    "luz_cocina_encimera_6ce2": {
+      "id": "luz_cocina_encimera_6ce2",
+      "name": "Luz Cocina Encimera",
+      "room": "cocina",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "cocina_luces",
+        "channel": "state_l2"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_cocina_encimera_6ce2",
+      "state": "OFF"
+    },
+    "luz_luz_pasillo_dormitorio_9c4b": {
+      "id": "luz_luz_pasillo_dormitorio_9c4b",
+      "name": "luz pasillo dormitorio",
+      "room": "pasillo",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "pasillo_habitacion",
+        "channel": "state_l1"
+      },
+      "commutation_switches": [
+        {
+          "device": "pasillo_cocina",
+          "channel": "state_l1"
+        },
+        {
+          "device": "entrada_placa_principal",
+          "channel": "state_left"
+        }
+      ],
+      "habana_entity_id": "luz_luz_pasillo_dormitorio_9c4b",
+      "state": "OFF"
+    },
+    "luz_luz_fuera_7d73": {
+      "id": "luz_luz_fuera_7d73",
+      "name": "Luz Fuera",
+      "room": "pasillo",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "entrada_placa_principal",
+        "channel": "state_right"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_luz_fuera_7d73",
+      "state": "OFF"
+    },
+    "luz_estractor_7973": {
+      "id": "luz_estractor_7973",
+      "name": "Luz Baño Principal",
+      "room": "bano",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "baño_pincipal",
+        "channel": "state_left"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_estractor_7973",
+      "state": "OFF"
+    },
+    "luz_luz_baño_principal_2e8f": {
+      "id": "luz_luz_baño_principal_2e8f",
+      "name": "Led Baño Principal",
+      "room": "bano",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "baño_pincipal",
+        "channel": "state_center"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_luz_baño_principal_2e8f",
+      "state": "OFF"
+    },
+    "luz_estractor_baño_0584": {
+      "id": "luz_estractor_baño_0584",
+      "name": "Estractor Baño",
+      "room": "bano",
+      "kind": "wired_relay",
+      "power_source": {
+        "type": "plate_channel",
+        "device": "baño_pincipal",
+        "channel": "state_right"
+      },
+      "commutation_switches": [],
+      "habana_entity_id": "luz_estractor_baño_0584",
+      "state": "OFF"
+    }
+  },
+  "dimmer_sequences": {
+    "salon_dimmer": {
+      "enabled": true,
+      "dimmer_device": "salon_dimmer",
+      "name": "Secuencia 9 Pasos Tiras LED Salón",
+      "current_step": 8,
+      "saved_step": 8,
+      "is_on": false,
+      "steps": [
+        {
+          "step": 1,
+          "label": "Paso 1: Aparador 20%",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 55,
+            "salon_led_tv": 0
+          }
+        },
+        {
+          "step": 2,
+          "label": "Paso 2: Aparador 60%",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 100,
+            "salon_led_tv": 0
+          }
+        },
+        {
+          "step": 3,
+          "label": "Paso 3: Aparador 100%",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 0,
+            "salon_led_tv": 55
+          }
+        },
+        {
+          "step": 4,
+          "label": "Paso 4: Aparador + Sofá (Mín 20%)",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 0,
+            "salon_led_tv": 100
+          }
+        },
+        {
+          "step": 5,
+          "label": "Paso 5: Aparador + Sofá (Mín 20% / 60%)",
+          "targets": {
+            "salon_led_aparador": 55,
+            "salon_led_sofa": 0,
+            "salon_led_tv": 0
+          }
+        },
+        {
+          "step": 6,
+          "label": "Paso 6: Aparador + Sofá (Mín 20% / 100%)",
+          "targets": {
+            "salon_led_aparador": 100,
+            "salon_led_sofa": 0,
+            "salon_led_tv": 0
+          }
+        },
+        {
+          "step": 7,
+          "label": "Paso 7: Todas (Aparador + Sofá + TV al Mín 20%)",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 55,
+            "salon_led_tv": 40
+          }
+        },
+        {
+          "step": 8,
+          "label": "Paso 8: Todas al Mínimo (20%)",
+          "targets": {
+            "salon_led_aparador": 0,
+            "salon_led_sofa": 100,
+            "salon_led_tv": 100
+          }
+        },
+        {
+          "step": 9,
+          "label": "Paso 9: Todas al 100%",
+          "targets": {
+            "salon_led_aparador": 100,
+            "salon_led_sofa": 100,
+            "salon_led_tv": 100
+          }
+        }
+      ]
+    }
+  },
+  "sensors_cameras": [
+    {
+      "ieee": "0xa4c1383d5e1123a5",
+      "friendly_name": "baño_pincipal",
+      "name": "Baño Pincipal",
+      "room": "bano",
+      "type": "sensor"
+    },
+    {
+      "ieee": "0x00124b002f9fd04b",
+      "friendly_name": "0x00124b002f9fd04b",
+      "name": "Acceso Vivienda Puerta",
+      "room": "pasillo",
+      "type": "door_window",
+      "category": "contact"
+    },
+    {
+      "ieee": "0xa4c13868cd9105c0",
+      "friendly_name": "sensor_de_calidad_de_aire",
+      "name": "Sensor de Calidad de Aire",
+      "room": "entrada",
+      "type": "door_window",
+      "category": "contact"
+    },
+    {
+      "ieee": "0xa4c138f01b49b1c9",
+      "friendly_name": "sensor_limonero",
+      "name": "Sensor Limonero",
+      "room": "terraza",
+      "type": "door_window",
+      "category": "contact"
+    },
+    {
+      "ieee": "0xa4c138e85fd37510",
+      "friendly_name": "sensor_frutal",
+      "name": "Sensor Frutal",
+      "room": "terraza",
+      "type": "door_window",
+      "category": "contact"
+    },
+    {
+      "ieee": "0x0ceff6fffe69f5af",
+      "friendly_name": "sensor_temperatura",
+      "name": "Sensor Temperatura",
+      "room": "salon",
+      "type": "door_window",
+      "category": "contact"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "andrea",
+      "name": "Habitación Andrea",
+      "icon": "🛏️"
+    },
+    {
+      "id": "salon",
+      "name": "Salón y Comedor",
+      "icon": "🛋️"
+    },
+    {
+      "id": "cocina",
+      "name": "Cocina",
+      "icon": "🍳"
+    },
+    {
+      "id": "principal",
+      "name": "Dormitorio Principal",
+      "icon": "👑"
+    },
+    {
+      "id": "pasillo",
+      "name": "Pasillo",
+      "icon": "🚪"
+    },
+    {
+      "id": "bano",
+      "name": "Baño",
+      "icon": "🚿"
+    },
+    {
+      "id": "entrada",
+      "name": "Entrada / Recibidor",
+      "icon": "🔑"
+    },
+    {
+      "id": "terraza",
+      "name": "Terraza",
+      "icon": "🌿"
+    }
+  ]
+}

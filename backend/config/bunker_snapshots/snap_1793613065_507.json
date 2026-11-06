@@ -1,0 +1,209 @@
+{
+  "id": "snap_1793613065_507",
+  "timestamp": 1793613065.5072563,
+  "datetime_str": "2026-11-02 10:51:05",
+  "description": "Auto-snapshot antes de guardar widget bunker_habitacion_andrea",
+  "manifest_copy": {
+    "enabled": true,
+    "version": "1.0.0",
+    "last_updated": 1793613065.498142,
+    "widgets": [
+      {
+        "id": "bunker_demo_master_night",
+        "title": "Macro Buenas Noches (Experimental)",
+        "icon": "🌙",
+        "category": "macro",
+        "author": "IA Local",
+        "description": "Apaga todas las luces secundarias, baja persianas al 10% y fija iluminación tenue en el pasillo.",
+        "color": "#8b5cf6",
+        "actions": [
+          {
+            "entity_id": "all_lights",
+            "action": "turn_off_all"
+          },
+          {
+            "entity_id": "led_pasillo_central",
+            "action": "turn_on",
+            "brightness": 15
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_quick_terrace_relax",
+        "title": "Ambiente Terraza & Salón Cálido",
+        "icon": "🍹",
+        "category": "scene",
+        "author": "IA Local",
+        "description": "Luz tenue dorada para desconexión en el salón y terraza exterior.",
+        "color": "#f59e0b",
+        "actions": [
+          {
+            "entity_id": "luz_techo_salon",
+            "action": "turn_on"
+          },
+          {
+            "entity_id": "led_sofa_salon",
+            "action": "turn_on",
+            "brightness": 35
+          }
+        ],
+        "created_at": 1793603777.2966948,
+        "updated_at": 1793603777.2966948,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_control_luces_radio",
+        "title": "Control Maestro: Luces & Radio",
+        "icon": "🎛️",
+        "category": "panel",
+        "author": "IA Habana 14",
+        "description": "Ventana interactiva de acceso rápido a la iluminación global y streaming de radio multiroom.",
+        "color": "#00f3ff",
+        "buttons": [
+          {
+            "label": "Encender Luces",
+            "icon": "💡",
+            "color": "#10b981",
+            "action_payload": {
+              "entity_id": "all_lights",
+              "action": "turn_on_all"
+            }
+          },
+          {
+            "label": "Apagar Luces",
+            "icon": "🌙",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "all_lights",
+              "action": "turn_off_all"
+            }
+          },
+          {
+            "label": "Radio On / Off",
+            "icon": "📻",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "radio",
+              "action": "toggle",
+              "station": "los40"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "all_lights",
+            "action": "turn_on_all"
+          }
+        ],
+        "updated_at": 1793613065.4860213,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_persianas_panel",
+        "title": "Control Central de Persianas",
+        "icon": "🪟",
+        "category": "panel",
+        "author": "IA Habana 14",
+        "description": "Control unificado de las persianas motorizadas de la vivienda (Salón, Andrea y Principal).",
+        "color": "#38bdf8",
+        "buttons": [
+          {
+            "label": "Subir Todas (100%)",
+            "icon": "☀️",
+            "color": "#38bdf8",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "action": "open"
+            }
+          },
+          {
+            "label": "Modo Noche (20%)",
+            "icon": "🌙",
+            "color": "#818cf8",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "position": 20
+            }
+          },
+          {
+            "label": "Cerrar Todas (0%)",
+            "icon": "🔒",
+            "color": "#ef4444",
+            "action_payload": {
+              "entity_id": "all_covers",
+              "action": "close"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "all_covers",
+            "action": "close"
+          }
+        ],
+        "created_at": 1793613065.4921405,
+        "updated_at": 1793613065.4921405,
+        "run_count": 0
+      },
+      {
+        "id": "bunker_ambientes_salon",
+        "title": "Ambientes & Modos Salón",
+        "icon": "🎬",
+        "category": "scene",
+        "author": "IA Habana 14",
+        "description": "Escenas lumínicas cinematográficas y de relajación con balance cálido de tiras LED.",
+        "color": "#8b5cf6",
+        "buttons": [
+          {
+            "label": "Modo Cine",
+            "icon": "🍿",
+            "color": "#8b5cf6",
+            "action_payload": {
+              "entity_id": "modo_cine",
+              "action": "modo_cine"
+            }
+          },
+          {
+            "label": "Modo Relax Cálido",
+            "icon": "🕯️",
+            "color": "#f59e0b",
+            "action_payload": {
+              "entity_id": "modo_relax",
+              "action": "modo_relax"
+            }
+          },
+          {
+            "label": "Luces Día Salón",
+            "icon": "💡",
+            "color": "#10b981",
+            "action_payload": {
+              "entity_id": "room_salon",
+              "action": "turn_on"
+            }
+          },
+          {
+            "label": "Apagar Salón",
+            "icon": "🌑",
+            "color": "#64748b",
+            "action_payload": {
+              "entity_id": "room_salon",
+              "action": "turn_off"
+            }
+          }
+        ],
+        "actions": [
+          {
+            "entity_id": "modo_cine",
+            "action": "modo_cine"
+          }
+        ],
+        "created_at": 1793613065.498142,
+        "updated_at": 1793613065.498142,
+        "run_count": 0
+      }
+    ]
+  }
+}

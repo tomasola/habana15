@@ -1,0 +1,544 @@
+{
+  "luz_lazos_andrea": {
+    "entity_id": "luz_lazos_andrea",
+    "name": "Lámpara de Lazos Cama Andrea",
+    "alias_ai": "lámpara de lazos de Andrea",
+    "alias": "lámpara de lazos de Andrea",
+    "room": "andrea",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 15.0,
+    "synonyms": [
+      "luz lazos andrea",
+      "lampara lazos andrea",
+      "luz cama andrea",
+      "luz techo andrea"
+    ]
+  },
+  "luz_ventana_andrea": {
+    "entity_id": "luz_ventana_andrea",
+    "name": "Luz Oculta Viga / Ventana Andrea",
+    "alias_ai": "luz de la ventana de Andrea",
+    "alias": "luz de la ventana de Andrea",
+    "room": "andrea",
+    "device_type": "light_wall",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz ventana andrea",
+      "luz viga andrea",
+      "luz oculta andrea"
+    ]
+  },
+  "led_cama_andrea": {
+    "entity_id": "led_cama_andrea",
+    "name": "Tira LED Cabecero Cama Andrea",
+    "alias_ai": "tira LED de la cama de Andrea",
+    "alias": "tira LED de la cama de Andrea",
+    "room": "andrea",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 24.0,
+    "synonyms": [
+      "led cama andrea",
+      "tira led cama andrea",
+      "led cabecero andrea"
+    ]
+  },
+  "led_foso_andrea": {
+    "entity_id": "led_foso_andrea",
+    "name": "Tira LED Foso Entrada Andrea",
+    "alias_ai": "tira LED del foso de Andrea",
+    "alias": "tira LED del foso de Andrea",
+    "room": "andrea",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 24.0,
+    "synonyms": [
+      "led foso andrea",
+      "tira led entrada andrea",
+      "led techo andrea"
+    ]
+  },
+  "luz_comedor_salon": {
+    "entity_id": "luz_comedor_salon",
+    "name": "Luz Ventna",
+    "alias_ai": "luz de la ventana del salón",
+    "alias": "luz de la ventana del salón",
+    "room": "salon",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 22.0,
+    "synonyms": [
+      "luz ventana salon",
+      "luz ventna salon"
+    ]
+  },
+  "luz_techo_salon": {
+    "entity_id": "luz_techo_salon",
+    "name": "Luz Terraza",
+    "alias_ai": "luz de la terraza del salón",
+    "alias": "luz de la terraza del salón",
+    "room": "salon",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 24.0,
+    "synonyms": [
+      "luz terraza",
+      "luz terraza salon",
+      "luz exterior terraza"
+    ]
+  },
+  "luz_luz_del_comedor_d9b2": {
+    "entity_id": "luz_luz_del_comedor_d9b2",
+    "name": "Luz del Comedor",
+    "alias_ai": "luz del comedor",
+    "alias": "luz del comedor",
+    "room": "salon",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 24.0,
+    "synonyms": [
+      "luz comedor",
+      "lampara comedor",
+      "luz mesa comedor"
+    ]
+  },
+  "luz_luz_principal_del_salon_53c1": {
+    "entity_id": "luz_luz_principal_del_salon_53c1",
+    "name": "Luz Principal del Salón",
+    "alias_ai": "luz principal del salón",
+    "alias": "luz principal del salón",
+    "room": "salon",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 28.0,
+    "synonyms": [
+      "luz principal salon",
+      "luz techo salon",
+      "luz del salon"
+    ]
+  },
+  "led_aparador_salon": {
+    "entity_id": "led_aparador_salon",
+    "name": "Tira LED Aparador Salón",
+    "alias_ai": "tira LED del aparador del salón",
+    "alias": "tira LED del aparador del salón",
+    "room": "salon",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 32.0,
+    "synonyms": [
+      "led aparador",
+      "tira led aparador",
+      "led comedor salon"
+    ]
+  },
+  "led_sofa_salon": {
+    "entity_id": "led_sofa_salon",
+    "name": "Tira LED Sofá Salón",
+    "alias_ai": "tira LED del sofá del salón",
+    "alias": "tira LED del sofá del salón",
+    "room": "salon",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 32.0,
+    "synonyms": [
+      "led sofa",
+      "tira led sofa",
+      "led sofa salon"
+    ]
+  },
+  "led_tv_salon": {
+    "entity_id": "led_tv_salon",
+    "name": "Tira LED Mueble TV Salón",
+    "alias_ai": "tira LED de la tele del salón",
+    "alias": "tira LED de la tele del salón",
+    "room": "salon",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 28.0,
+    "synonyms": [
+      "led tv",
+      "led tele",
+      "tira led tv salon",
+      "led mueble tv"
+    ]
+  },
+  "luz_techo_cocina": {
+    "entity_id": "luz_techo_cocina",
+    "name": "Luz Principal Cocina",
+    "alias_ai": "luz de la cocina",
+    "alias": "luz de la cocina",
+    "room": "cocina",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 24.0,
+    "synonyms": [
+      "luz cocina",
+      "luz techo cocina"
+    ]
+  },
+  "luz_techo_pasillo": {
+    "entity_id": "luz_techo_pasillo",
+    "name": "Luz Techo Pasillo",
+    "alias_ai": "luz del techo del pasillo",
+    "alias": "luz del techo del pasillo",
+    "room": "pasillo",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz pasillo",
+      "luz techo pasillo"
+    ]
+  },
+  "led_pasillo_central": {
+    "entity_id": "led_pasillo_central",
+    "name": "Tira LED Pasillo",
+    "alias_ai": "tira LED del pasillo",
+    "alias": "tira LED del pasillo",
+    "room": "pasillo",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 24.0,
+    "synonyms": [
+      "led pasillo",
+      "tira led pasillo"
+    ]
+  },
+  "luz_techo_bano": {
+    "entity_id": "luz_techo_bano",
+    "name": "Luz Principal Baño",
+    "alias_ai": "luz del baño",
+    "alias": "luz del baño",
+    "room": "bano",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz bano",
+      "luz baño",
+      "luz techo bano"
+    ]
+  },
+  "led_espejo_bano": {
+    "entity_id": "led_espejo_bano",
+    "name": "Tira LED Baño",
+    "alias_ai": "tira LED del baño",
+    "alias": "tira LED del baño",
+    "room": "bano",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 18.0,
+    "synonyms": [
+      "led bano",
+      "led espejo bano",
+      "tira led bano"
+    ]
+  },
+  "luz_techo_principal": {
+    "entity_id": "luz_techo_principal",
+    "name": "Luz Techo Dormitorio Principal",
+    "alias_ai": "luz del techo del dormitorio principal",
+    "alias": "luz del techo del dormitorio principal",
+    "room": "principal",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 22.0,
+    "synonyms": [
+      "luz dormitorio principal",
+      "luz habitacion principal",
+      "luz techo principal"
+    ]
+  },
+  "led_dormitorio_principal": {
+    "entity_id": "led_dormitorio_principal",
+    "name": "Tira LED Dormitorio Principal",
+    "alias_ai": "tira LED del dormitorio principal",
+    "alias": "tira LED del dormitorio principal",
+    "room": "principal",
+    "device_type": "led_strip",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": true,
+    "supports_color_temp": true,
+    "watts": 28.0,
+    "synonyms": [
+      "led dormitorio principal",
+      "led habitacion principal",
+      "tira led principal"
+    ]
+  },
+  "luz_recibidor_entrada": {
+    "entity_id": "luz_recibidor_entrada",
+    "name": "Luz Recibidor Entrada",
+    "alias_ai": "luz de la entrada",
+    "alias": "luz de la entrada",
+    "room": "entrada",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 16.0,
+    "synonyms": [
+      "luz entrada",
+      "luz recibidor",
+      "luz hall"
+    ]
+  },
+  "cover.persiana_andrea": {
+    "entity_id": "cover.persiana_andrea",
+    "name": "Persiana Andrea",
+    "alias_ai": "persiana de la habitación de Andrea",
+    "alias": "persiana andrea",
+    "room": "andrea",
+    "device_type": "cover",
+    "is_real": true,
+    "is_backlight": false,
+    "watts": 45.0,
+    "synonyms": [
+      "persiana andrea",
+      "persiana habitacion andrea",
+      "cortina andrea"
+    ]
+  },
+  "cover.persiana_salon": {
+    "entity_id": "cover.persiana_salon",
+    "name": "Persiana Salón",
+    "alias_ai": "persiana del salón",
+    "alias": "persiana salón ventana",
+    "room": "salon",
+    "device_type": "cover",
+    "is_real": true,
+    "is_backlight": false,
+    "watts": 60.0,
+    "synonyms": [
+      "persiana salon",
+      "persiana ventana salon",
+      "cortina salon"
+    ]
+  },
+  "cover.persiana_principal": {
+    "entity_id": "cover.persiana_principal",
+    "name": "Persiana Principal",
+    "alias_ai": "persiana del dormitorio principal",
+    "alias": "persiana principal",
+    "room": "principal",
+    "device_type": "cover",
+    "is_real": true,
+    "is_backlight": false,
+    "watts": 50.0,
+    "synonyms": [
+      "persiana principal",
+      "persiana dormitorio principal",
+      "cortina principal",
+      "persiana habitacion principal"
+    ]
+  },
+  "cover.persiana_salon_puerta": {
+    "entity_id": "cover.persiana_salon_puerta",
+    "name": "Persiana Salón Puerta",
+    "alias_ai": "persiana de la puerta del salón",
+    "alias": "persiana puerta salón",
+    "room": "salon",
+    "device_type": "cover",
+    "is_real": true,
+    "is_backlight": false,
+    "watts": 60.0,
+    "synonyms": [
+      "persiana salon puerta",
+      "persiana puerta salon",
+      "cortina puerta salon",
+      "persiana de la puerta"
+    ]
+  },
+  "luz_ventana_principal": {
+    "entity_id": "luz_ventana_principal",
+    "name": "Luz Ventana Dormitorio Principal",
+    "alias_ai": "luz ventana dormitorio principal",
+    "alias": "luz ventana dormitorio principal",
+    "room": "principal",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz ventana dormitorio principal",
+      "luz ventana principal"
+    ]
+  },
+  "luz_cocina_mesa_7f97": {
+    "entity_id": "luz_cocina_mesa_7f97",
+    "name": "Luz Cocina Mesa",
+    "alias_ai": "luz cocina mesa",
+    "alias": "luz cocina mesa",
+    "room": "cocina",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz cocina mesa",
+      "luz cocina mesa 7f97"
+    ]
+  },
+  "luz_cocina_encimera_6ce2": {
+    "entity_id": "luz_cocina_encimera_6ce2",
+    "name": "Luz Cocina Encimera",
+    "alias_ai": "luz cocina encimera",
+    "alias": "luz cocina encimera",
+    "room": "cocina",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz cocina encimera",
+      "luz cocina encimera 6ce2"
+    ]
+  },
+  "luz_luz_pasillo_dormitorio_9c4b": {
+    "entity_id": "luz_luz_pasillo_dormitorio_9c4b",
+    "name": "luz pasillo dormitorio",
+    "alias_ai": "luz pasillo dormitorio",
+    "alias": "luz pasillo dormitorio",
+    "room": "pasillo",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz pasillo dormitorio",
+      "luz luz pasillo dormitorio 9c4b"
+    ]
+  },
+  "luz_luz_fuera_7d73": {
+    "entity_id": "luz_luz_fuera_7d73",
+    "name": "Luz Fuera",
+    "alias_ai": "luz fuera",
+    "alias": "luz fuera",
+    "room": "pasillo",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz fuera",
+      "luz luz fuera 7d73"
+    ]
+  },
+  "luz_estractor_7973": {
+    "entity_id": "luz_estractor_7973",
+    "name": "Luz Baño Principal",
+    "alias_ai": "luz baño principal",
+    "alias": "luz baño principal",
+    "room": "bano",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "luz baño principal",
+      "luz estractor 7973"
+    ]
+  },
+  "luz_luz_baño_principal_2e8f": {
+    "entity_id": "luz_luz_baño_principal_2e8f",
+    "name": "Led Baño Principal",
+    "alias_ai": "led baño principal",
+    "alias": "led baño principal",
+    "room": "bano",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "led baño principal",
+      "luz luz baño principal 2e8f"
+    ]
+  },
+  "luz_estractor_baño_0584": {
+    "entity_id": "luz_estractor_baño_0584",
+    "name": "Estractor Baño",
+    "alias_ai": "estractor baño",
+    "alias": "estractor baño",
+    "room": "bano",
+    "device_type": "light_ceiling",
+    "is_real": true,
+    "is_backlight": false,
+    "supports_brightness": false,
+    "supports_color_temp": false,
+    "watts": 18.0,
+    "synonyms": [
+      "estractor baño",
+      "luz estractor baño 0584"
+    ]
+  }
+}

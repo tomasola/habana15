@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "73997f7523ce28fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "cb63b1019073e24f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "363e552042f40372",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Camaras/camara_cam720.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "camara_cam720"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "74d82558e24d58cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "e737dda00048f7e2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45ef481f43c52e18",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "02137766a6635cab",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "8438aa666cbcd85d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7025edf536163f21",
+    "type": "split",
+    "children": [
+      {
+        "id": "23b46a1e9df4292a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7abed5779ea0587d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "5c623f84a647fbad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "2f8429e899276283",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "08e1c0f1054c1c57",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "72e70c8249c966dc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "363e552042f40372",
+  "lastOpenFiles": [
+    "Memoria_Lola/20261028_Usuario_en_silencio_durante_la_tarde_ve.md",
+    "WhatsApp/Musica_y_Audios/20261027_221315_wa_1793135595546.md",
+    "WhatsApp/Musica_y_Audios/20261027_221315_wa_1793135595546.ogg",
+    "WhatsApp/Enlaces_Web/20261027_182019_GitHub - JetBrainsthinkrail Vibe code wi.md",
+    "WhatsApp/Enlaces_Web/20261027_072318_Google Maps.md",
+    "WhatsApp/Fotos/20261026_225502_wa_1793051702490.md",
+    "WhatsApp/Fotos/20261026_225502_wa_1793051702490.jpg",
+    "Sistema/GUIA_IA_LOCAL_Y_OBSIDIAN.md",
+    "Avatar/modo_relax_activado.md",
+    "Avatar/00_INDICE_AVATAR_Y_PROMPTS_VEO.md",
+    "Avatar/welcome_home_systems_online_202606051035.md",
+    "Avatar/seria_analitica_leer_correos_202606051136.md",
+    "Avatar/riendo_suavemente_chistes_respue_202606051135.md",
+    "Avatar/recordatorio_guardado_en_memoria_202606051120.md",
+    "Avatar/proxmox_server_operating_normally_20260605112.md",
+    "Avatar/procesando_informacion_voz_espanol_2026060511.md",
+    "Avatar/nueva_notificacion_en_calendario_202606051118.md",
+    "Avatar/mujer_esperando_que_le_digan_202606070100.md",
+    "Avatar/mujer_esperando_que_le_digan_202606070100_1.md",
+    "Avatar/lola_looking_thoughtful_202606051138.md",
+    "Avatar/las_camaras_de_vigilancia_no_muestran_activid.md",
+    "Avatar/hola_tomas_puedo_ayudarte_202606051035.md",
+    "Avatar/hola_lupe_puedo_ayudarte_202606051143.md",
+    "Avatar/hola_andrea_en_que_puedo_202606051145.md",
+    "Avatar/hola_en_que_puedo_ayudarte_hoy.md",
+    "Avatar/he_activado_sistema_seguridad_casa_2026060510.md",
+    "Avatar/female_cyborg_talking_to_camera_202606070241.md",
+    "Avatar/female_cyborg_talking_to_camera_202606070238.md",
+    "Avatar",
+    "Agenda",
+    "WhatsApp/Fotos/20261026_175808_wa_1793033888336.jpg",
+    "WhatsApp/Fotos/20261026_175808_wa_1793033888207.jpg",
+    "WhatsApp/Fotos/20261026_175808_wa_1793033888066.jpg",
+    "WhatsApp/Fotos/20261026_175638_wa_1793033798608.jpg",
+    "WhatsApp/Fotos/20261026_175638_wa_1793033798372.jpg",
+    "WhatsApp/Fotos/20261026_174405_wa_1793033045457.jpg",
+    "WhatsApp/Fotos/20261026_174257_wa_1793032977938.bin",
+    "Topologia_Hogar.canvas"
+  ]
+}

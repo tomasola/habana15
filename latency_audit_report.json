@@ -1,0 +1,29 @@
+{
+  "camara_pasillo": {
+    "ok": true,
+    "cam_id": "camara_pasillo",
+    "connect_ms": 1587.4,
+    "first_frame_ms": 11.1,
+    "mog2_process_ms": 8.18,
+    "fps": 20.7,
+    "avg_read_latency_ms": 48.2,
+    "p95_read_latency_ms": 93.91,
+    "frames_tested": 312
+  },
+  "camara_cam720": {
+    "ok": true,
+    "cam_id": "camara_cam720",
+    "connect_ms": 832.0,
+    "first_frame_ms": 6.4,
+    "mog2_process_ms": 1.51,
+    "fps": 18.2,
+    "avg_read_latency_ms": 54.82,
+    "p95_read_latency_ms": 79.11,
+    "frames_tested": 274
+  },
+  "automation_latency": {
+    "pasillo_trigger_ms": 277.29,
+    "salon_trigger_ms": 22.76,
+    "direct_mqtt_ms": 25.8
+  }
+}

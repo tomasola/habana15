@@ -1,0 +1,41 @@
+[
+  {
+    "id": "watch_tomas",
+    "name": "Smartwatch Tomás",
+    "owner": "Tomás",
+    "mac": "FF:32:89:A1:02:11",
+    "type": "smartwatch",
+    "current_room": "salon",
+    "current_node": "esp32_bola_xiaozhi",
+    "rssi": -58,
+    "distance_meters": 0.9,
+    "last_seen": 1793522861.724132,
+    "status": "in_room"
+  },
+  {
+    "id": "phone_tomas",
+    "name": "Smartphone Tomás",
+    "owner": "Tomás",
+    "mac": "AA:11:BB:22:CC:33",
+    "type": "smartphone",
+    "current_room": "salon",
+    "current_node": "esp32_bola_xiaozhi",
+    "rssi": -63,
+    "distance_meters": 2.1,
+    "last_seen": 1793506953.889077,
+    "status": "in_room"
+  },
+  {
+    "id": "phone_andrea",
+    "name": "Smartphone Andrea",
+    "owner": "Andrea",
+    "mac": "DD:44:EE:55:FF:66",
+    "type": "smartphone",
+    "current_room": "andrea",
+    "current_node": null,
+    "rssi": -60,
+    "distance_meters": 1.1,
+    "last_seen": 1793513315.270447,
+    "status": "in_room"
+  }
+]

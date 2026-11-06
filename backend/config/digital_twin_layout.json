@@ -1,0 +1,262 @@
+[
+  {
+    "id": "salon",
+    "name": "Salón",
+    "position": [
+      6.4,
+      0,
+      0.8
+    ],
+    "size": [
+      8.8,
+      1.4,
+      6.4
+    ],
+    "shape": "box",
+    "coverWall": "right",
+    "coverOffset": 0,
+    "coverWidth": 2.8,
+    "accentColor": "#38bdf8",
+    "color": "#38bdf8",
+    "lights": [
+      "luz_comedor_salon",
+      "luz_techo_salon",
+      "luz_luz_del_comedor_d9b2",
+      "luz_luz_principal_del_salon_53c1"
+    ],
+    "ledStrips": [
+      "led_aparador_salon",
+      "led_sofa_salon",
+      "led_tv_salon"
+    ],
+    "covers": [
+      "cover.persiana_salon",
+      "cover.persiana_salon_puerta"
+    ]
+  },
+  {
+    "id": "cocina",
+    "name": "Cocina",
+    "position": [
+      -4.2,
+      0,
+      0
+    ],
+    "size": [
+      8.2,
+      1.4,
+      5.2
+    ],
+    "shape": "box",
+    "coverWall": "back",
+    "coverOffset": 0,
+    "coverWidth": 2.4,
+    "accentColor": "#10b981",
+    "color": "#10b981",
+    "lights": [
+      "luz_cocina_mesa_7f97",
+      "luz_cocina_encimera_6ce2"
+    ],
+    "ledStrips": [],
+    "covers": []
+  },
+  {
+    "id": "pasillo",
+    "name": "Pasillo Central (L)",
+    "position": [
+      1,
+      0,
+      1
+    ],
+    "size": [
+      2,
+      1.4,
+      10.8
+    ],
+    "shape": "L",
+    "lTurn": {
+      "direction": "right",
+      "positionOnArm": "back",
+      "length": 3.7,
+      "width": 2
+    },
+    "coverWall": "front",
+    "coverOffset": 0.4,
+    "coverWidth": 2.1,
+    "accentColor": "#f59e0b",
+    "color": "#f59e0b",
+    "lights": [
+      "luz_techo_pasillo",
+      "luz_luz_pasillo_dormitorio_9c4b",
+      "luz_luz_fuera_7d73"
+    ],
+    "ledStrips": [
+      "led_pasillo_central"
+    ],
+    "covers": []
+  },
+  {
+    "id": "bano",
+    "name": "Baño Principal",
+    "position": [
+      2.8,
+      0,
+      -5.8
+    ],
+    "size": [
+      6,
+      1.4,
+      2.8
+    ],
+    "shape": "box",
+    "coverWall": "back",
+    "coverOffset": 0,
+    "coverWidth": 2,
+    "accentColor": "#06b6d4",
+    "color": "#06b6d4",
+    "lights": [
+      "luz_techo_bano",
+      "luz_estractor_7973",
+      "luz_luz_baño_principal_2e8f",
+      "luz_estractor_baño_0584"
+    ],
+    "ledStrips": [
+      "led_espejo_bano"
+    ],
+    "covers": []
+  },
+  {
+    "id": "principal",
+    "name": "Dormitorio Principal",
+    "position": [
+      8.4,
+      0,
+      -5
+    ],
+    "size": [
+      5.2,
+      1.4,
+      5.4
+    ],
+    "shape": "box",
+    "coverWall": "right",
+    "coverOffset": 0,
+    "coverWidth": 2.6,
+    "accentColor": "#ec4899",
+    "color": "#ec4899",
+    "lights": [
+      "luz_techo_principal",
+      "luz_ventana_principal"
+    ],
+    "ledStrips": [
+      "led_dormitorio_principal"
+    ],
+    "covers": [
+      "cover.persiana_principal"
+    ]
+  },
+  {
+    "id": "andrea",
+    "name": "Habitación Andrea",
+    "position": [
+      6.6,
+      0,
+      6.4
+    ],
+    "size": [
+      8.8,
+      1.4,
+      4.6
+    ],
+    "shape": "box",
+    "coverWall": "right",
+    "coverOffset": 0,
+    "coverWidth": 2.6,
+    "accentColor": "#ec4899",
+    "color": "#ec4899",
+    "lights": [
+      "luz_lazos_andrea",
+      "luz_ventana_andrea"
+    ],
+    "ledStrips": [
+      "led_cama_andrea",
+      "led_foso_andrea"
+    ],
+    "covers": [
+      "cover.persiana_andrea"
+    ]
+  },
+  {
+    "id": "despacho",
+    "name": "Despacho",
+    "position": [
+      -2.8,
+      0,
+      -4.8
+    ],
+    "size": [
+      5.2,
+      1.4,
+      4.4
+    ],
+    "shape": "box",
+    "coverWall": "back",
+    "coverOffset": 0,
+    "coverWidth": 2.2,
+    "accentColor": "#8b5cf6",
+    "color": "#8b5cf6",
+    "lights": [],
+    "ledStrips": [],
+    "covers": []
+  },
+  {
+    "id": "entrada",
+    "name": "Baño Andrea / Entrada",
+    "position": [
+      2.6,
+      0,
+      8
+    ],
+    "size": [
+      5.4,
+      1.4,
+      3
+    ],
+    "shape": "box",
+    "coverWall": "front",
+    "coverOffset": 0,
+    "coverWidth": 2,
+    "accentColor": "#00f3ff",
+    "color": "#00f3ff",
+    "lights": [
+      "luz_recibidor_entrada"
+    ],
+    "ledStrips": [],
+    "covers": []
+  },
+  {
+    "id": "terraza",
+    "name": "Terraza Exterior",
+    "position": [
+      12.8,
+      0,
+      0.6
+    ],
+    "size": [
+      3.4,
+      0.8,
+      16
+    ],
+    "shape": "box",
+    "coverWall": "front",
+    "coverOffset": 0,
+    "coverWidth": 3.5,
+    "accentColor": "#10b981",
+    "color": "#10b981",
+    "lights": [
+      "luz_techo_salon"
+    ],
+    "ledStrips": [],
+    "covers": []
+  }
+]

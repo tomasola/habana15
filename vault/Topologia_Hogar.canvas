@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"hub","type":"text","text":"## 🧠 HABANA 12\nNúcleo Domótico Central\nFastAPI :8050 · Z2M 1883","x":0,"y":0,"width":260,"height":130},
+		{"id":"pasillo","type":"text","text":"### 🚶 [[Estancias/Pasillo]]\n- [[Dispositivos/led_pasillo_central]]\n- [[Camaras/camara_pasillo]]\n- Conmutadas Norte/Sur","x":300,"y":-220,"width":260,"height":140},
+		{"id":"andrea","type":"text","text":"### 👧 [[Estancias/Habitacion_Andrea]]\n- [[Dispositivos/luz_lazos_andrea]]\n- [[Dispositivos/led_cama_andrea]]\n- Persiana Motorizada","x":-220,"y":220,"width":260,"height":140},
+		{"id":"vision","type":"text","text":"### 👁️ Centinela YOLOv8\n- Inferencia CPU ~25ms\n- Discriminación Pet-Safe\n- [[Diario/2026-10-25]]","x":300,"y":220,"width":260,"height":140},
+		{"id":"salon","type":"text","text":"### 🛋️ [[Estancias/Salon]]\n- [[Dispositivos/led_sofa_salon]]\n- [[Camaras/camara_cam720]]\n- Dimmer 9 Pasos","x":-220,"y":-220,"width":260,"height":140}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"hub","fromSide":"left","toNode":"salon","toSide":"right"},
+		{"id":"e2","fromNode":"hub","fromSide":"right","toNode":"pasillo","toSide":"left"},
+		{"id":"e3","fromNode":"hub","fromSide":"bottom","toNode":"andrea","toSide":"top"},
+		{"id":"e4","fromNode":"hub","fromSide":"bottom","toNode":"vision","toSide":"top"},
+		{"id":"e5","fromNode":"vision","fromSide":"top","toNode":"pasillo","toSide":"bottom"},
+		{"id":"e6","fromNode":"vision","fromSide":"left","toNode":"salon","toSide":"bottom"}
+	]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "snap_1793655448_2",
+  "timestamp": 1793655448.0022488,
+  "datetime_str": "2026-11-02 22:37:28",
+  "description": "Auto-snapshot antes de borrar widget bunker_panel_maestro_tomás_1793613832",
+  "manifest_copy": {
+    "enabled": true,
+    "version": "1.0.0",
+    "last_updated": 1793655445.922467,
+    "widgets": [
+      {
+        "id": "bunker_panel_maestro_tomás_1793613832",
+        "title": "Panel Maestro Tomas (Ajustado)",
+        "icon": "👑",
+        "category": "macro",
+        "author": "Búnker AI Engine",
+        "description": "Generado dinámicamente a partir de: 'crea una ventana nueva en la que salgan tres botones, uno encienda toda las luces otro apage toda las luces, y el ultimo que ponga la radio o la apague si esta encendida'",
+        "color": "#00f3ff",
+        "actions": [
+          {
+            "label": "💡 Encender Luces",
+            "service": "light",
+            "entity_id": "all_lights",
+            "action": "turn_on_all",
+            "style": "success"
+          },
+          {
+            "label": "🌑 Apagar Luces",
+            "service": "light",
+            "entity_id": "all_lights",
+            "action": "turn_off_all",
+            "style": "danger"
+          },
+          {
+            "label": "📻 Radio On / Off",
+            "service": "radio",
+            "entity_id": "radio_master",
+            "action": "toggle",
+            "style": "info"
+          }
+        ],
+        "updated_at": 1793614620.345382,
+        "run_count": 0
+      }
+    ]
+  }
+}

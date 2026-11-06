@@ -1,0 +1,54 @@
+[
+  {
+    "id": "btn_buenos_dias",
+    "title": "Buenos Días Casa",
+    "icon": "🌅",
+    "color": "#34d399",
+    "room": "general",
+    "action_type": "multi_scene",
+    "description": "Activa rutina de despertar y apertura matinal",
+    "payload": {
+      "scene_ids": [
+        "scene_good_morning"
+      ]
+    },
+    "created_by": "user",
+    "order": 2
+  },
+  {
+    "id": "btn_noche_completa",
+    "title": "Apagar Salón + Vigilancia",
+    "icon": "🌙",
+    "color": "#a855f7",
+    "room": "general",
+    "action_type": "multi_scene",
+    "description": "Apaga todo el salón y activa las luces de paso por cámara",
+    "payload": {
+      "scene_ids": [
+        "scene_salon_todo_off",
+        "auto_camara_pasillo_humano"
+      ]
+    },
+    "created_by": "user",
+    "order": 3
+  },
+  {
+    "id": "btn_salir_de_casa",
+    "title": "Salir de Casa (Todo OFF)",
+    "icon": "🛡️",
+    "color": "#ef4444",
+    "room": "general",
+    "action_type": "multi_scene",
+    "description": "Ejecuta Fuera de Casa y Apagar Salón simultáneamente",
+    "payload": {
+      "scene_ids": [
+        "scene_fuera_de_casa",
+        "scene_salon_todo_off"
+      ]
+    },
+    "created_by": "user",
+    "order": 4,
+    "bg_gradient": null,
+    "border_color": null
+  }
+]
